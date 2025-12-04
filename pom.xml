@@ -36,7 +36,7 @@
     <mdep.analyze.skip>true</mdep.analyze.skip>
 
     <!-- Dependencies. -->
-    <com.fasterxml.jackson.version>2.19.2</com.fasterxml.jackson.version>
+    <com.fasterxml.jackson.version>2.20.1</com.fasterxml.jackson.version>
     <com.io7m.dixmont.version>2.1.0</com.io7m.dixmont.version>
     <com.io7m.quarrel.version>1.8.0</com.io7m.quarrel.version>
     <jqwik.version>1.9.3</jqwik.version>
@@ -115,19 +115,11 @@
       </dependency>
 
       <dependency>
-        <groupId>com.fasterxml.jackson.core</groupId>
-        <artifactId>jackson-annotations</artifactId>
+        <groupId>com.fasterxml.jackson</groupId>
+        <artifactId>jackson-bom</artifactId>
         <version>${com.fasterxml.jackson.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.fasterxml.jackson.core</groupId>
-        <artifactId>jackson-databind</artifactId>
-        <version>${com.fasterxml.jackson.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.fasterxml.jackson.module</groupId>
-        <artifactId>jackson-module-kotlin</artifactId>
-        <version>${com.fasterxml.jackson.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
       </dependency>
 
       <dependency>
