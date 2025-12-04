@@ -13,7 +13,7 @@
 
   <groupId>org.thepalaceproject.webpub</groupId>
   <artifactId>org.thepalaceproject.webpub</artifactId>
-  <version>0.1.0</version>
+  <version>1.0.0-SNAPSHOT</version>
 
   <packaging>pom</packaging>
   <name>org.thepalaceproject.webpub</name>
