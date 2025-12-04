@@ -36,7 +36,7 @@
     <mdep.analyze.skip>true</mdep.analyze.skip>
 
     <!-- Dependencies. -->
-    <com.fasterxml.jackson.version>2.19.2</com.fasterxml.jackson.version>
+    <com.fasterxml.jackson.version>2.20</com.fasterxml.jackson.version>
     <com.io7m.dixmont.version>2.1.0</com.io7m.dixmont.version>
     <com.io7m.quarrel.version>1.8.0</com.io7m.quarrel.version>
     <jqwik.version>1.9.3</jqwik.version>
