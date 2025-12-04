@@ -45,7 +45,7 @@ data class WPMFeed @JsonCreator constructor(
   @JsonProperty(
     value = "images"
   )
-  val images : List<WPMPublication> = listOf(),
+  val images : List<WPMLink> = listOf(),
 
   /**
    * The facets
