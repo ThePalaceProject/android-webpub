@@ -7,8 +7,8 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.io7m.primogenitor</groupId>
-    <artifactId>com.io7m.primogenitor.full</artifactId>
-    <version>9.0.0-beta0003</version>
+    <artifactId>com.io7m.primogenitor.lite</artifactId>
+    <version>9.1.0</version>
   </parent>
 
   <groupId>org.thepalaceproject.webpub</groupId>
@@ -29,7 +29,7 @@
   <properties>
     <!-- Configuration. -->
     <io7m.api.previousVersion>1.0.0-SNAPSHOT</io7m.api.previousVersion>
-    <io7m.java.requiredSDKBuildVersion>[17,25)</io7m.java.requiredSDKBuildVersion>
+    <io7m.java.requiredSDKBuildVersion>[25,26)</io7m.java.requiredSDKBuildVersion>
     <io7m.java.targetJavaVersion>17</io7m.java.targetJavaVersion>
 
     <checkstyle.skip>true</checkstyle.skip>
@@ -201,15 +201,6 @@
         </plugin>
       </plugins>
     </pluginManagement>
-
-    <plugins>
-      <!-- Generate a site -->
-      <plugin>
-        <groupId>com.io7m.minisite</groupId>
-        <artifactId>com.io7m.minisite.maven_plugin</artifactId>
-        <inherited>false</inherited>
-      </plugin>
-    </plugins>
   </build>
 
 </project>

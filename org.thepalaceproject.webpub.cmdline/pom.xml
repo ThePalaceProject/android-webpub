@@ -19,7 +19,7 @@
   <url>https://www.github.com/ThePalaceProject/android-webpub</url>
 
   <properties>
-    <io7m.java.requiredSDKBuildVersion>[21,25)</io7m.java.requiredSDKBuildVersion>
+    <io7m.java.requiredSDKBuildVersion>[25,26)</io7m.java.requiredSDKBuildVersion>
     <io7m.java.targetJavaVersion>21</io7m.java.targetJavaVersion>
   </properties>
 
