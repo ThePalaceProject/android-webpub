@@ -5,4 +5,4 @@ package org.thepalaceproject.webpub.core
  * standard.
  */
 
-annotation class WPMExtension()
+annotation class WPMExtension(val name: String)

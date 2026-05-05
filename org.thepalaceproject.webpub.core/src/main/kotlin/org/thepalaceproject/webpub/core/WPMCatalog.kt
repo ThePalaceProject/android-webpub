@@ -7,7 +7,7 @@ import com.fasterxml.jackson.annotation.JsonProperty
  * The OPDS 2.0 catalog section.
  */
 
-@WPMExtension
+@WPMExtension("PalaceLibraryRegistry")
 @JsonIgnoreProperties(ignoreUnknown = true)
 data class WPMCatalog(
 

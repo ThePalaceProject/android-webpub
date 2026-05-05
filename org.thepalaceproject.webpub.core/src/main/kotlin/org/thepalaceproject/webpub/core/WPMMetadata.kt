@@ -284,4 +284,14 @@ data class WPMMetadata @JsonCreator constructor(
     value = "contains"
   )
   val contains : WPMContains?,
+
+  /**
+   * The number of pages in the publication.
+   */
+
+  @WPMExtension("PalaceLibraryRegistry")
+  @JsonProperty(
+    value = "numberOfItems"
+  )
+  val numberOfItems : Number?,
 ) : WPMElement()

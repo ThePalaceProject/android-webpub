@@ -8,7 +8,7 @@ import java.net.URI
  * @see "https://github.com/readium/webpub-manifest/blob/master/schema/extensions/encryption/properties.schema.json"
  */
 
-@WPMExtension
+@WPMExtension("Encryption")
 @JsonIgnoreProperties(ignoreUnknown = true)
 data class WPMEncrypted(
   @JsonProperty(

@@ -77,6 +77,22 @@ class WPMParseTest {
   }
 
   @Test
+  fun testRegistryCrawlable20260505() {
+    val feed =
+      this.mapper.readValue<WPMManifest>(
+        this.resource("registry-crawlable-20260505.json"),
+        WPMManifest::class.java
+      )
+
+    assertEquals(1122, feed.metadata.numberOfItems)
+    assertEquals(20, feed.catalogs.size)
+    assertEquals(7, feed.links.size)
+    assertEquals(0, feed.publications.size)
+
+    this.roundTripManifest(feed)
+  }
+
+  @Test
   fun testArticle0() {
     val p0 =
       this.mapper.readValue<WPMArticle>(
