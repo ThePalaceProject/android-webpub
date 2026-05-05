@@ -9,7 +9,7 @@
   <parent>
     <artifactId>org.thepalaceproject.webpub</artifactId>
     <groupId>org.thepalaceproject.webpub</groupId>
-    <version>0.2.1</version>
+    <version>1.0.0-SNAPSHOT</version>
   </parent>
   <artifactId>org.thepalaceproject.webpub.cmdline</artifactId>
 
