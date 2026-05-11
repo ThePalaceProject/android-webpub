@@ -6,10 +6,15 @@
         <c:change date="2025-12-04T00:00:00+00:00" summary="Initial release."/>
       </c:changes>
     </c:release>
-    <c:release date="2025-12-05T16:58:00+00:00" is-open="true" ticket-system="org.lyrasis.jira" version="0.2.0">
+    <c:release date="2026-05-11T00:00:00+00:00" is-open="false" ticket-system="org.lyrasis.jira" version="0.2.0">
       <c:changes>
-        <c:change date="2025-12-05T00:00:00+00:00" summary="Fix image links." compatible="false"/>
-        <c:change date="2025-12-05T16:58:00+00:00" summary="Allow a non-standard ID property."/>
+        <c:change compatible="false" date="2025-12-05T00:00:00+00:00" summary="Fix image links."/>
+        <c:change date="2025-12-05T00:00:00+00:00" summary="Allow a non-standard ID property."/>
+      </c:changes>
+    </c:release>
+    <c:release date="2026-05-11T08:47:39+00:00" is-open="true" ticket-system="org.lyrasis.jira" version="1.0.0">
+      <c:changes>
+        <c:change date="2026-05-11T08:47:39+00:00" summary="Add defaultValue to language maps."/>
       </c:changes>
     </c:release>
   </c:releases>
