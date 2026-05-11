@@ -13,7 +13,7 @@
 
   <groupId>org.thepalaceproject.webpub</groupId>
   <artifactId>org.thepalaceproject.webpub</artifactId>
-  <version>1.2.0</version>
+  <version>1.3.0-SNAPSHOT</version>
 
   <packaging>pom</packaging>
   <name>org.thepalaceproject.webpub</name>
@@ -28,7 +28,7 @@
 
   <properties>
     <!-- Configuration. -->
-    <io7m.api.previousVersion>1.1.0</io7m.api.previousVersion>
+    <io7m.api.previousVersion>1.2.0</io7m.api.previousVersion>
     <io7m.java.requiredSDKBuildVersion>[25,26)</io7m.java.requiredSDKBuildVersion>
     <io7m.java.targetJavaVersion>17</io7m.java.targetJavaVersion>
 
