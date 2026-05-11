@@ -166,6 +166,12 @@ INSERT INTO account_provider_descriptions (
         connection.commit()
       }
     }
+
+    dataSource.connection.use { connection ->
+      connection.createStatement().use { statement ->
+        statement.execute("VACUUM")
+      }
+    }
   }
 
   private fun process(
