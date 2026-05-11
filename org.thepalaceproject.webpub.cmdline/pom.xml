@@ -42,12 +42,20 @@
     </dependency>
 
     <dependency>
+      <groupId>org.xerial</groupId>
+      <artifactId>sqlite-jdbc</artifactId>
+    </dependency>
+    <dependency>
       <groupId>com.io7m.quarrel</groupId>
       <artifactId>com.io7m.quarrel.ext.logback</artifactId>
     </dependency>
     <dependency>
       <groupId>com.io7m.quarrel</groupId>
       <artifactId>com.io7m.quarrel.core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.google.protobuf</groupId>
+      <artifactId>protobuf-java</artifactId>
     </dependency>
 
     <dependency>

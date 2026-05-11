@@ -5,6 +5,7 @@ import com.io7m.quarrel.core.QApplicationMetadata
 import com.io7m.quarrel.core.QApplicationType
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
+import org.thepalaceproject.webpub.cmdline.internal.WPCmdBundleCatalogs
 import org.thepalaceproject.webpub.cmdline.internal.WPCmdCrawl
 import java.lang.Long
 import java.net.URI
@@ -37,6 +38,7 @@ class Main(
     val builder = QApplication.builder(metadata)
     builder.allowAtSyntax(true)
     builder.addCommand(WPCmdCrawl())
+    builder.addCommand(WPCmdBundleCatalogs())
 
     this.application = builder.build()
     this.exitCode = 0
