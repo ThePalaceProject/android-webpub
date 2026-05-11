@@ -22,9 +22,9 @@
         <c:change date="2026-05-11T00:00:00+00:00" summary="Alias &quot;updated&quot; to &quot;modified&quot; as a Palace extension."/>
       </c:changes>
     </c:release>
-    <c:release date="2026-05-11T14:34:43+00:00" is-open="true" ticket-system="org.lyrasis.jira" version="1.2.0">
+    <c:release date="2026-05-11T14:59:12+00:00" is-open="false" ticket-system="org.lyrasis.jira" version="1.2.0">
       <c:changes>
-        <c:change date="2026-05-11T14:34:43+00:00" summary="Add sqlite bundling CLI tool."/>
+        <c:change date="2026-05-11T00:00:00+00:00" summary="Add sqlite bundling CLI tool."/>
       </c:changes>
     </c:release>
   </c:releases>
