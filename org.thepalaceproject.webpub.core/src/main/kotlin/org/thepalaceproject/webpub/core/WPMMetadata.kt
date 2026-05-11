@@ -294,4 +294,14 @@ data class WPMMetadata @JsonCreator constructor(
     value = "numberOfItems"
   )
   val numberOfItems : Number?,
+
+  /**
+   * The 'updated' time. This is an alias to 'modified'.
+   */
+
+  @WPMExtension("PalaceLibraryRegistry")
+  @JsonProperty(
+    value = "updated"
+  )
+  val updated : OffsetDateTime? = modified,
 ) : WPMElement()
