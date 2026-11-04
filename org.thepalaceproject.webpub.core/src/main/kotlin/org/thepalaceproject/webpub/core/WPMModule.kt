@@ -1,6 +1,7 @@
 package org.thepalaceproject.webpub.core
 
 import com.fasterxml.jackson.databind.BeanDescription
+import com.fasterxml.jackson.databind.JsonNode
 import com.fasterxml.jackson.databind.JsonSerializer
 import com.fasterxml.jackson.databind.Module
 import com.fasterxml.jackson.databind.SerializationConfig
@@ -20,6 +21,7 @@ object WPMModule {
       .allowClass(Double::class.javaPrimitiveType)
       .allowClass(Int::class.javaPrimitiveType)
       .allowClass(Integer::class.java)
+      .allowClass(JsonNode::class.java)
       .allowClass(MIMEType::class.java)
       .allowClass(Number::class.java)
       .allowClass(OffsetDateTime::class.java)
@@ -101,6 +103,7 @@ object WPMModule {
       .allowClassName("java.util.List<org.thepalaceproject.webpub.core.WPMSubject>")
       .allowClassName("java.util.List<org.thepalaceproject.webpub.core.WPMSubjectOrString>")
       .allowClassName("java.util.List<org.thepalaceproject.webpub.core.WPMVolume>")
+      .allowClassName("java.util.Map<java.lang.String,com.fasterxml.jackson.databind.JsonNode>")
       .allowClassName("java.util.Map<java.lang.String,java.lang.String>")
       .allowClassName("java.util.Set<java.lang.String>")
       .build()
