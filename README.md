@@ -35,7 +35,7 @@ have not been integrated at the time of writing.
 The resulting parser is somewhat permissive, and somewhat strict. We are
 aiming for maximum compatibility with real-world feeds and manifests as opposed
 to strict adherence to specifications (many of which are currently in _draft_
-status anwyay).
+status anyway).
 
 Specifically:
 
