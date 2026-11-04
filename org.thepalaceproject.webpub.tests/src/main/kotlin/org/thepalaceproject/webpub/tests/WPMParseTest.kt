@@ -3,6 +3,7 @@ package org.thepalaceproject.webpub.tests
 import com.fasterxml.jackson.databind.exc.MismatchedInputException
 import com.fasterxml.jackson.databind.json.JsonMapper
 import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Assertions.assertNotNull
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.DynamicTest
 import org.junit.jupiter.api.Test
@@ -15,6 +16,7 @@ import org.thepalaceproject.webpub.core.WPMChapter
 import org.thepalaceproject.webpub.core.WPMCollection
 import org.thepalaceproject.webpub.core.WPMEpisode
 import org.thepalaceproject.webpub.core.WPMFeed
+import org.thepalaceproject.webpub.core.WPMIndirectAcquisitionTree
 import org.thepalaceproject.webpub.core.WPMIssue
 import org.thepalaceproject.webpub.core.WPMManifest
 import org.thepalaceproject.webpub.core.WPMMappers
@@ -26,6 +28,7 @@ import org.thepalaceproject.webpub.core.WPMVolume
 import java.io.IOException
 import java.io.InputStream
 import java.nio.file.Path
+import java.time.OffsetDateTime
 import java.util.stream.Stream
 import kotlin.reflect.KProperty1
 import kotlin.reflect.full.memberProperties
@@ -90,6 +93,46 @@ class WPMParseTest {
     assertEquals(0, feed.publications.size)
 
     this.roundTripManifest(feed)
+  }
+
+  @Test
+  fun testLoans20261104() {
+    val feed =
+      this.mapper.readValue<WPMFeed>(
+        this.resource("loans-20261104.json"),
+        WPMFeed::class.java
+      )
+
+    assertEquals(1, feed.publications.size)
+    val pub = feed.publications[0]
+    val acq =
+      pub.links.filter { link ->
+        link.relation.any { it.contains("http://opds-spec.org/acquisition") }
+      }
+    assertEquals(2, acq.size)
+
+    val lcpProps = acq[0].properties
+    assertNotNull(lcpProps)
+    val lcp = lcpProps!!
+    assertEquals(
+      listOf(WPMIndirectAcquisitionTree("application/epub+zip")),
+      lcp.indirectAcquisition
+    )
+    val av = lcp.availability
+    assertNotNull(av)
+    val avail = av!!
+    assertEquals("ready", avail.state)
+    assertEquals(OffsetDateTime.parse("2026-11-04T15:51:22Z"), avail.since)
+    assertEquals(OffsetDateTime.parse("2026-11-07T15:51:22Z"), avail.until)
+    assertEquals(
+      "6ebb76713a1279fb3e16eea733a60198caed9f629a91954e70914b63a778e0e3",
+      lcp.extensionProperties["lcp_hashed_passphrase"]?.asText()
+    )
+    assertEquals(10, lcp.extensionProperties["copies"]?.get("total")?.asInt())
+    assertEquals(9, lcp.extensionProperties["copies"]?.get("available")?.asInt())
+    assertEquals(0, lcp.extensionProperties["holds"]?.get("total")?.asInt())
+
+    this.roundTripFeed(feed)
   }
 
   @Test
@@ -856,6 +899,7 @@ class WPMParseTest {
     "fulcrum/umpebc_oa",
     "groups-20250821.json",
     "igen.json",
+    "loans-20261104.json",
     "null_link_type.json",
     "null_titles.json",
     "oapen/TwentyThree_English_only.json",

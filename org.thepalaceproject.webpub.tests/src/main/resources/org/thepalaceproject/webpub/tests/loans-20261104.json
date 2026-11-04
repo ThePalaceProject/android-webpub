@@ -1,0 +1,198 @@
+{
+  "metadata": {
+    "title": "Active loans and holds",
+    "modified": "2026-11-04T15:52:28Z"
+  },
+  "links": [
+    {
+      "href": "https://gorgon.staging.palaceproject.io/a1qa-test/loans/",
+      "rel": "self",
+      "type": "application/opds+json"
+    },
+    {
+      "href": "https://gorgon.staging.palaceproject.io/a1qa-test/loans/",
+      "rel": "http://opds-spec.org/shelf",
+      "type": "application/opds+json"
+    },
+    {
+      "href": "https://gorgon.staging.palaceproject.io/a1qa-test/annotations/",
+      "rel": "http://www.w3.org/ns/oa#annotationService",
+      "type": "application/ld+json; profile=\"http://www.w3.org/ns/anno.jsonld\""
+    },
+    {
+      "href": "https://thepalaceproject.org/code-of-conduct",
+      "rel": "terms-of-service",
+      "type": "text/html"
+    },
+    {
+      "href": "https://thepalaceproject.org/about",
+      "rel": "copyright",
+      "type": "text/html"
+    },
+    {
+      "href": "https://thepalaceproject.org/about",
+      "rel": "about",
+      "type": "text/html"
+    },
+    {
+      "href": "https://thepalaceproject.org/about",
+      "rel": "license",
+      "type": "text/html"
+    },
+    {
+      "href": "mailto:dalessandro@lyrasis.org",
+      "rel": "help",
+      "type": "application/opds+json"
+    },
+    {
+      "href": "https://gorgon.staging.palaceproject.io/a1qa-test/patrons/me/",
+      "rel": "profile",
+      "type": "application/opds+json"
+    }
+  ],
+  "publications": [
+    {
+      "metadata": {
+        "title": "Letters for the Church",
+        "@type": "http://schema.org/Book",
+        "sortAs": "Letters for the Church",
+        "identifier": "urn:isbn:9780830850907",
+        "modified": "2026-11-04T15:51:22Z",
+        "published": "2021-12-21T00:00:00Z",
+        "language": "en",
+        "author": {
+          "name": "Darian R. Lockett",
+          "links": [
+            {
+              "href": "https://gorgon.staging.palaceproject.io/a1qa-test/works/contributor/Darian%20R.%20Lockett/eng/Adult,Adults+Only,All+Ages,Children,Young+Adult",
+              "rel": "contributor",
+              "type": "application/opds+json"
+            }
+          ]
+        },
+        "publisher": {
+          "name": "Ivp Academic"
+        },
+        "subject": [
+          {
+            "name": "Nonfiction",
+            "sortAs": "Nonfiction",
+            "code": "http://librarysimplified.org/terms/fiction/Nonfiction",
+            "scheme": "http://librarysimplified.org/terms/fiction/"
+          },
+          {
+            "name": "Christianity",
+            "sortAs": "Christianity",
+            "code": "http://librarysimplified.org/terms/genres/Simplified/Christianity",
+            "scheme": "http://librarysimplified.org/terms/genres/Simplified/"
+          },
+          {
+            "name": "Adult",
+            "sortAs": "Adult",
+            "code": "Adult",
+            "scheme": "http://schema.org/audience"
+          }
+        ],
+        "description": "The Catholic Epistles often get short shrift. Tucked into a few pages near the back of our Bibles, these books are sometimes referred to as the \"non-Pauline epistles\" or \"concluding letters,\" maybe getting lumped together with Hebrews and Revelation. Yet these letters, Darian Lockett argues, are treasures hidden in plain sight, and it's time to give them the attention they deserve.\nIn Letters for the Church, Lockett reveals how the Catholic Epistles provide a unique window into early Christian theology and practice. Based on evidence from the early church, he contends that the seven letters of James, 1&#x2013;2 Peter, 1&#x2013;3 John, and Jude were accepted into the canon as a collection and should be read together. Here Lockett introduces the context and content of the Catholic Epistles while emphasizing how all seven letters are connected. Each chapter outlines the author, audience, and genre of one of the epistles, traces its flow of thought, and explores shared themes with the other Catholic Epistles.\nThe early church valued the Catholic Epistles for multiple reasons: they defend orthodox faith and morals against the challenges of heretics, make clear that Christianity combines belief with action, and round out the New Testament witness to Christian faith and life. By introducing the coherent vision of these seven epistles, Letters for the Church helps us rediscover these riches."
+      },
+      "images": [
+        {
+          "href": "https://covers.feedbooks.net/item/3872313.jpg?size=large&t=1626312630",
+          "rel": "http://opds-spec.org/image",
+          "type": "image/png"
+        },
+        {
+          "href": "https://covers.feedbooks.net/item/3872313.jpg?t=1626312630",
+          "rel": "http://opds-spec.org/image/thumbnail",
+          "type": "image/png"
+        }
+      ],
+      "links": [
+        {
+          "href": "https://market.thepalaceproject.org/item/3872313/preview",
+          "rel": "preview",
+          "type": "application/epub+zip"
+        },
+        {
+          "href": "https://gorgon.staging.palaceproject.io/a1qa-test/works/ISBN/9780830850907",
+          "rel": "alternate",
+          "type": "application/opds-publication+json"
+        },
+        {
+          "href": "https://gorgon.staging.palaceproject.io/a1qa-test/works/ISBN/9780830850907",
+          "rel": "self",
+          "type": "application/opds-publication+json"
+        },
+        {
+          "href": "https://gorgon.staging.palaceproject.io/a1qa-test/works/ISBN/9780830850907/related_books",
+          "rel": "related",
+          "type": "application/opds+json",
+          "title": "Recommended Works"
+        },
+        {
+          "href": "https://gorgon.staging.palaceproject.io/a1qa-test/annotations/ISBN/9780830850907",
+          "rel": "http://www.w3.org/ns/oa#annotationService",
+          "type": "application/ld+json; profile=\"http://www.w3.org/ns/anno.jsonld\""
+        },
+        {
+          "href": "https://gorgon.staging.palaceproject.io/a1qa-test/analytics/ISBN/9780830850907/open_book",
+          "rel": "http://librarysimplified.org/terms/rel/analytics/open-book",
+          "type": "text/html"
+        },
+        {
+          "href": "https://gorgon.staging.palaceproject.io/a1qa-test/works/39970/fulfill/13",
+          "rel": "http://opds-spec.org/acquisition",
+          "type": "application/vnd.readium.lcp.license.v1.0+json",
+          "properties": {
+            "lcp_hashed_passphrase": "6ebb76713a1279fb3e16eea733a60198caed9f629a91954e70914b63a778e0e3",
+            "indirectAcquisition": [
+              {
+                "type": "application/epub+zip"
+              }
+            ],
+            "holds": {
+              "total": 0
+            },
+            "copies": {
+              "total": 10,
+              "available": 9
+            },
+            "availability": {
+              "state": "ready",
+              "since": "2026-11-04T15:51:22Z",
+              "until": "2026-11-07T15:51:22Z"
+            }
+          }
+        },
+        {
+          "href": "https://gorgon.staging.palaceproject.io/a1qa-test/works/39970/fulfill/16",
+          "rel": "http://opds-spec.org/acquisition",
+          "type": "application/opds-publication+json",
+          "properties": {
+            "indirectAcquisition": [
+              {
+                "type": "text/html;profile=\"http://librarysimplified.org/terms/profiles/streaming-media\""
+              }
+            ],
+            "holds": {
+              "total": 0
+            },
+            "copies": {
+              "total": 10,
+              "available": 9
+            },
+            "availability": {
+              "state": "ready",
+              "since": "2026-11-04T15:51:22Z",
+              "until": "2026-11-07T15:51:22Z"
+            }
+          }
+        },
+        {
+          "href": "https://gorgon.staging.palaceproject.io/a1qa-test/loans/39970/revoke",
+          "rel": "http://librarysimplified.org/terms/rel/revoke"
+        }
+      ]
+    }
+  ]
+}
