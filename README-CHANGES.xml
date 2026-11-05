@@ -27,10 +27,13 @@
         <c:change date="2026-05-11T00:00:00+00:00" summary="Add sqlite bundling CLI tool."/>
       </c:changes>
     </c:release>
-    <c:release date="2026-11-05T14:42:21+00:00" is-open="true" ticket-system="org.lyrasis.jira" version="1.3.0">
+    <c:release date="2026-11-05T00:00:00+00:00" is-open="false" ticket-system="org.lyrasis.jira" version="1.3.0">
       <c:changes>
-        <c:change date="2026-11-05T14:42:21+00:00" summary="Retain unknown and extended OPDS 2.0 link properties."/>
+        <c:change date="2026-11-05T00:00:00+00:00" summary="Retain unknown and extended OPDS 2.0 link properties."/>
       </c:changes>
+    </c:release>
+    <c:release date="2026-11-05T15:32:35+00:00" is-open="true" ticket-system="org.lyrasis.jira" version="1.4.0">
+      <c:changes/>
     </c:release>
   </c:releases>
   <c:ticket-systems>
