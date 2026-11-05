@@ -3,112 +3,141 @@
 
 package org.thepalaceproject.webpub.cmdline.internal;
 
-public final class DBSerialization {
-  private DBSerialization() {}
-  public static void registerAllExtensions(
-      com.google.protobuf.ExtensionRegistryLite registry) {
+public final class DBSerialization
+{
+  private DBSerialization()
+  {
   }
 
   public static void registerAllExtensions(
-      com.google.protobuf.ExtensionRegistry registry) {
-    registerAllExtensions(
-        (com.google.protobuf.ExtensionRegistryLite) registry);
+    com.google.protobuf.ExtensionRegistryLite registry)
+  {
   }
-  public interface DBSLink1OrBuilder extends
-      // @@protoc_insertion_point(interface_extends:org.thepalaceproject.webpub.cmdline.internal.DBSLink1)
-      com.google.protobuf.MessageOrBuilder {
+
+  public static void registerAllExtensions(
+    com.google.protobuf.ExtensionRegistry registry)
+  {
+    registerAllExtensions(
+      (com.google.protobuf.ExtensionRegistryLite) registry);
+  }
+
+  public interface DBSLink1OrBuilder
+    extends
+    // @@protoc_insertion_point(interface_extends:org.thepalaceproject.webpub.cmdline.internal.DBSLink1)
+    com.google.protobuf.MessageOrBuilder
+  {
 
     /**
      * <code>string type = 1;</code>
+     * 
      * @return The type.
      */
     java.lang.String getType();
+
     /**
      * <code>string type = 1;</code>
+     * 
      * @return The bytes for type.
      */
-    com.google.protobuf.ByteString
-        getTypeBytes();
+    com.google.protobuf.ByteString getTypeBytes();
 
     /**
      * <code>string relation = 2;</code>
+     * 
      * @return The relation.
      */
     java.lang.String getRelation();
+
     /**
      * <code>string relation = 2;</code>
+     * 
      * @return The bytes for relation.
      */
-    com.google.protobuf.ByteString
-        getRelationBytes();
+    com.google.protobuf.ByteString getRelationBytes();
 
     /**
      * <code>string title = 3;</code>
+     * 
      * @return The title.
      */
     java.lang.String getTitle();
+
     /**
      * <code>string title = 3;</code>
+     * 
      * @return The bytes for title.
      */
-    com.google.protobuf.ByteString
-        getTitleBytes();
+    com.google.protobuf.ByteString getTitleBytes();
 
     /**
      * <code>uint32 height = 4;</code>
+     * 
      * @return The height.
      */
     int getHeight();
 
     /**
      * <code>uint32 width = 5;</code>
+     * 
      * @return The width.
      */
     int getWidth();
 
     /**
      * <code>double duration = 6;</code>
+     * 
      * @return The duration.
      */
     double getDuration();
 
     /**
      * <code>double bitrate = 7;</code>
+     * 
      * @return The bitrate.
      */
     double getBitrate();
 
     /**
      * <code>string href = 8;</code>
+     * 
      * @return The href.
      */
     java.lang.String getHref();
+
     /**
      * <code>string href = 8;</code>
+     * 
      * @return The bytes for href.
      */
-    com.google.protobuf.ByteString
-        getHrefBytes();
+    com.google.protobuf.ByteString getHrefBytes();
 
     /**
      * <code>bool templated = 9;</code>
+     * 
      * @return The templated.
      */
     boolean getTemplated();
   }
+
   /**
    * Protobuf type {@code org.thepalaceproject.webpub.cmdline.internal.DBSLink1}
    */
   public static final class DBSLink1 extends
-      com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:org.thepalaceproject.webpub.cmdline.internal.DBSLink1)
-      DBSLink1OrBuilder {
-  private static final long serialVersionUID = 0L;
+    com.google.protobuf.GeneratedMessageV3
+    implements
+    // @@protoc_insertion_point(message_implements:org.thepalaceproject.webpub.cmdline.internal.DBSLink1)
+    DBSLink1OrBuilder
+  {
+    private static final long serialVersionUID = 0L;
+
     // Use DBSLink1.newBuilder() to construct.
-    private DBSLink1(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    private DBSLink1(com.google.protobuf.GeneratedMessageV3.Builder<?> builder)
+    {
       super(builder);
     }
-    private DBSLink1() {
+
+    private DBSLink1()
+    {
       type_ = "";
       relation_ = "";
       title_ = "";
@@ -116,61 +145,71 @@ public final class DBSerialization {
     }
 
     @java.lang.Override
-    @SuppressWarnings({"unused"})
+    @SuppressWarnings({
+      "unused"
+    })
     protected java.lang.Object newInstance(
-        UnusedPrivateParameter unused) {
+      UnusedPrivateParameter unused)
+    {
       return new DBSLink1();
     }
 
     @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields()
+    {
       return this.unknownFields;
     }
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
+
+    public static final com.google.protobuf.Descriptors.Descriptor getDescriptor()
+    {
       return org.thepalaceproject.webpub.cmdline.internal.DBSerialization.internal_static_org_thepalaceproject_webpub_cmdline_internal_DBSLink1_descriptor;
     }
 
     @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable internalGetFieldAccessorTable()
+    {
       return org.thepalaceproject.webpub.cmdline.internal.DBSerialization.internal_static_org_thepalaceproject_webpub_cmdline_internal_DBSLink1_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.class, org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.Builder.class);
+        .ensureFieldAccessorsInitialized(
+          org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.class,
+          org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.Builder.class);
     }
 
     public static final int TYPE_FIELD_NUMBER = 1;
     private volatile java.lang.Object type_;
+
     /**
      * <code>string type = 1;</code>
+     * 
      * @return The type.
      */
     @java.lang.Override
-    public java.lang.String getType() {
+    public java.lang.String getType()
+    {
       java.lang.Object ref = type_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
+        com.google.protobuf.ByteString bs =
+          (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         type_ = s;
         return s;
       }
     }
+
     /**
      * <code>string type = 1;</code>
+     * 
      * @return The bytes for type.
      */
     @java.lang.Override
-    public com.google.protobuf.ByteString
-        getTypeBytes() {
+    public com.google.protobuf.ByteString getTypeBytes()
+    {
       java.lang.Object ref = type_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+        com.google.protobuf.ByteString b =
+          com.google.protobuf.ByteString.copyFromUtf8(
+            (java.lang.String) ref);
         type_ = b;
         return b;
       } else {
@@ -180,35 +219,40 @@ public final class DBSerialization {
 
     public static final int RELATION_FIELD_NUMBER = 2;
     private volatile java.lang.Object relation_;
+
     /**
      * <code>string relation = 2;</code>
+     * 
      * @return The relation.
      */
     @java.lang.Override
-    public java.lang.String getRelation() {
+    public java.lang.String getRelation()
+    {
       java.lang.Object ref = relation_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
+        com.google.protobuf.ByteString bs =
+          (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         relation_ = s;
         return s;
       }
     }
+
     /**
      * <code>string relation = 2;</code>
+     * 
      * @return The bytes for relation.
      */
     @java.lang.Override
-    public com.google.protobuf.ByteString
-        getRelationBytes() {
+    public com.google.protobuf.ByteString getRelationBytes()
+    {
       java.lang.Object ref = relation_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+        com.google.protobuf.ByteString b =
+          com.google.protobuf.ByteString.copyFromUtf8(
+            (java.lang.String) ref);
         relation_ = b;
         return b;
       } else {
@@ -218,35 +262,40 @@ public final class DBSerialization {
 
     public static final int TITLE_FIELD_NUMBER = 3;
     private volatile java.lang.Object title_;
+
     /**
      * <code>string title = 3;</code>
+     * 
      * @return The title.
      */
     @java.lang.Override
-    public java.lang.String getTitle() {
+    public java.lang.String getTitle()
+    {
       java.lang.Object ref = title_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
+        com.google.protobuf.ByteString bs =
+          (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         title_ = s;
         return s;
       }
     }
+
     /**
      * <code>string title = 3;</code>
+     * 
      * @return The bytes for title.
      */
     @java.lang.Override
-    public com.google.protobuf.ByteString
-        getTitleBytes() {
+    public com.google.protobuf.ByteString getTitleBytes()
+    {
       java.lang.Object ref = title_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+        com.google.protobuf.ByteString b =
+          com.google.protobuf.ByteString.copyFromUtf8(
+            (java.lang.String) ref);
         title_ = b;
         return b;
       } else {
@@ -256,79 +305,96 @@ public final class DBSerialization {
 
     public static final int HEIGHT_FIELD_NUMBER = 4;
     private int height_;
+
     /**
      * <code>uint32 height = 4;</code>
+     * 
      * @return The height.
      */
     @java.lang.Override
-    public int getHeight() {
+    public int getHeight()
+    {
       return height_;
     }
 
     public static final int WIDTH_FIELD_NUMBER = 5;
     private int width_;
+
     /**
      * <code>uint32 width = 5;</code>
+     * 
      * @return The width.
      */
     @java.lang.Override
-    public int getWidth() {
+    public int getWidth()
+    {
       return width_;
     }
 
     public static final int DURATION_FIELD_NUMBER = 6;
     private double duration_;
+
     /**
      * <code>double duration = 6;</code>
+     * 
      * @return The duration.
      */
     @java.lang.Override
-    public double getDuration() {
+    public double getDuration()
+    {
       return duration_;
     }
 
     public static final int BITRATE_FIELD_NUMBER = 7;
     private double bitrate_;
+
     /**
      * <code>double bitrate = 7;</code>
+     * 
      * @return The bitrate.
      */
     @java.lang.Override
-    public double getBitrate() {
+    public double getBitrate()
+    {
       return bitrate_;
     }
 
     public static final int HREF_FIELD_NUMBER = 8;
     private volatile java.lang.Object href_;
+
     /**
      * <code>string href = 8;</code>
+     * 
      * @return The href.
      */
     @java.lang.Override
-    public java.lang.String getHref() {
+    public java.lang.String getHref()
+    {
       java.lang.Object ref = href_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
+        com.google.protobuf.ByteString bs =
+          (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         href_ = s;
         return s;
       }
     }
+
     /**
      * <code>string href = 8;</code>
+     * 
      * @return The bytes for href.
      */
     @java.lang.Override
-    public com.google.protobuf.ByteString
-        getHrefBytes() {
+    public com.google.protobuf.ByteString getHrefBytes()
+    {
       java.lang.Object ref = href_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+        com.google.protobuf.ByteString b =
+          com.google.protobuf.ByteString.copyFromUtf8(
+            (java.lang.String) ref);
         href_ = b;
         return b;
       } else {
@@ -338,34 +404,44 @@ public final class DBSerialization {
 
     public static final int TEMPLATED_FIELD_NUMBER = 9;
     private boolean templated_;
+
     /**
      * <code>bool templated = 9;</code>
+     * 
      * @return The templated.
      */
     @java.lang.Override
-    public boolean getTemplated() {
+    public boolean getTemplated()
+    {
       return templated_;
     }
 
     private byte memoizedIsInitialized = -1;
+
     @java.lang.Override
-    public final boolean isInitialized() {
+    public final boolean isInitialized()
+    {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
+      if (isInitialized == 1)
+        return true;
+      if (isInitialized == 0)
+        return false;
 
       memoizedIsInitialized = 1;
       return true;
     }
 
     @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
+    public void writeTo(
+      com.google.protobuf.CodedOutputStream output)
+      throws java.io.IOException
+    {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(type_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 1, type_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(relation_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, relation_);
+        com.google.protobuf.GeneratedMessageV3
+          .writeString(output, 2, relation_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(title_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 3, title_);
@@ -392,42 +468,54 @@ public final class DBSerialization {
     }
 
     @java.lang.Override
-    public int getSerializedSize() {
+    public int getSerializedSize()
+    {
       int size = memoizedSize;
-      if (size != -1) return size;
+      if (size != -1)
+        return size;
 
       size = 0;
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(type_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, type_);
+        size +=
+          com.google.protobuf.GeneratedMessageV3.computeStringSize(1, type_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(relation_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, relation_);
+        size +=
+          com.google.protobuf.GeneratedMessageV3
+            .computeStringSize(2, relation_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(title_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, title_);
+        size +=
+          com.google.protobuf.GeneratedMessageV3.computeStringSize(3, title_);
       }
       if (height_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, height_);
+        size +=
+          com.google.protobuf.CodedOutputStream
+            .computeUInt32Size(4, height_);
       }
       if (width_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, width_);
+        size +=
+          com.google.protobuf.CodedOutputStream
+            .computeUInt32Size(5, width_);
       }
       if (java.lang.Double.doubleToRawLongBits(duration_) != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeDoubleSize(6, duration_);
+        size +=
+          com.google.protobuf.CodedOutputStream
+            .computeDoubleSize(6, duration_);
       }
       if (java.lang.Double.doubleToRawLongBits(bitrate_) != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeDoubleSize(7, bitrate_);
+        size +=
+          com.google.protobuf.CodedOutputStream
+            .computeDoubleSize(7, bitrate_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(href_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, href_);
+        size +=
+          com.google.protobuf.GeneratedMessageV3.computeStringSize(8, href_);
       }
       if (templated_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, templated_);
+        size +=
+          com.google.protobuf.CodedOutputStream
+            .computeBoolSize(9, templated_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -435,41 +523,55 @@ public final class DBSerialization {
     }
 
     @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
+    public boolean equals(
+      final java.lang.Object obj)
+    {
       if (obj == this) {
-       return true;
+        return true;
       }
       if (!(obj instanceof org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1)) {
         return super.equals(obj);
       }
-      org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 other = (org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1) obj;
+      org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 other =
+        (org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1) obj;
 
       if (!getType()
-          .equals(other.getType())) return false;
+        .equals(other.getType()))
+        return false;
       if (!getRelation()
-          .equals(other.getRelation())) return false;
+        .equals(other.getRelation()))
+        return false;
       if (!getTitle()
-          .equals(other.getTitle())) return false;
+        .equals(other.getTitle()))
+        return false;
       if (getHeight()
-          != other.getHeight()) return false;
+        != other.getHeight())
+        return false;
       if (getWidth()
-          != other.getWidth()) return false;
+        != other.getWidth())
+        return false;
       if (java.lang.Double.doubleToLongBits(getDuration())
-          != java.lang.Double.doubleToLongBits(
-              other.getDuration())) return false;
+        != java.lang.Double.doubleToLongBits(
+          other.getDuration()))
+        return false;
       if (java.lang.Double.doubleToLongBits(getBitrate())
-          != java.lang.Double.doubleToLongBits(
-              other.getBitrate())) return false;
+        != java.lang.Double.doubleToLongBits(
+          other.getBitrate()))
+        return false;
       if (!getHref()
-          .equals(other.getHref())) return false;
+        .equals(other.getHref()))
+        return false;
       if (getTemplated()
-          != other.getTemplated()) return false;
-      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
+        != other.getTemplated())
+        return false;
+      if (!getUnknownFields().equals(other.getUnknownFields()))
+        return false;
       return true;
     }
 
     @java.lang.Override
-    public int hashCode() {
+    public int hashCode()
+    {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
       }
@@ -486,15 +588,18 @@ public final class DBSerialization {
       hash = (37 * hash) + WIDTH_FIELD_NUMBER;
       hash = (53 * hash) + getWidth();
       hash = (37 * hash) + DURATION_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+      hash =
+        (53 * hash) + com.google.protobuf.Internal.hashLong(
           java.lang.Double.doubleToLongBits(getDuration()));
       hash = (37 * hash) + BITRATE_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+      hash =
+        (53 * hash) + com.google.protobuf.Internal.hashLong(
           java.lang.Double.doubleToLongBits(getBitrate()));
       hash = (37 * hash) + HREF_FIELD_NUMBER;
       hash = (53 * hash) + getHref().hashCode();
       hash = (37 * hash) + TEMPLATED_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+      hash =
+        (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getTemplated());
       hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
@@ -502,127 +607,175 @@ public final class DBSerialization {
     }
 
     public static org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 parseFrom(
-        java.nio.ByteBuffer data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
+      java.nio.ByteBuffer data)
+      throws com.google.protobuf.InvalidProtocolBufferException
+    {
       return PARSER.parseFrom(data);
     }
+
     public static org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 parseFrom(
-        java.nio.ByteBuffer data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
+      java.nio.ByteBuffer data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException
+    {
       return PARSER.parseFrom(data, extensionRegistry);
     }
+
     public static org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
+      com.google.protobuf.ByteString data)
+      throws com.google.protobuf.InvalidProtocolBufferException
+    {
       return PARSER.parseFrom(data);
     }
+
     public static org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
+      com.google.protobuf.ByteString data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException
+    {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
+
+    public static org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 parseFrom(
+      byte[] data)
+      throws com.google.protobuf.InvalidProtocolBufferException
+    {
       return PARSER.parseFrom(data);
     }
+
     public static org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
+      byte[] data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException
+    {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input);
-    }
+
     public static org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
+      java.io.InputStream input)
+      throws java.io.IOException
+    {
       return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
+        .parseWithIOException(PARSER, input);
     }
-    public static org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
+
+    public static org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 parseFrom(
+      java.io.InputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException
+    {
       return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input);
+        .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
+      java.io.InputStream input)
+      throws java.io.IOException
+    {
       return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+        .parseDelimitedWithIOException(PARSER, input);
     }
-    public static org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
+
+    public static org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 parseDelimitedFrom(
+      java.io.InputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException
+    {
       return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input);
+        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 parseFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
+      com.google.protobuf.CodedInputStream input)
+      throws java.io.IOException
+    {
       return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
+        .parseWithIOException(PARSER, input);
+    }
+
+    public static org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 parseFrom(
+      com.google.protobuf.CodedInputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException
+    {
+      return com.google.protobuf.GeneratedMessageV3
+        .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
     @java.lang.Override
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder() {
+    public Builder newBuilderForType()
+    {
+      return newBuilder();
+    }
+
+    public static Builder newBuilder()
+    {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 prototype) {
+
+    public static Builder newBuilder(
+      org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 prototype)
+    {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
+
     @java.lang.Override
-    public Builder toBuilder() {
+    public Builder toBuilder()
+    {
       return this == DEFAULT_INSTANCE
-          ? new Builder() : new Builder().mergeFrom(this);
+        ? new Builder()
+        : new Builder().mergeFrom(this);
     }
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent)
+    {
       Builder builder = new Builder(parent);
       return builder;
     }
+
     /**
-     * Protobuf type {@code org.thepalaceproject.webpub.cmdline.internal.DBSLink1}
+     * Protobuf type
+     * {@code org.thepalaceproject.webpub.cmdline.internal.DBSLink1}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:org.thepalaceproject.webpub.cmdline.internal.DBSLink1)
-        org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1OrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
+      com.google.protobuf.GeneratedMessageV3.Builder<Builder>
+      implements
+      // @@protoc_insertion_point(builder_implements:org.thepalaceproject.webpub.cmdline.internal.DBSLink1)
+      org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1OrBuilder
+    {
+      public static final com.google.protobuf.Descriptors.Descriptor getDescriptor()
+      {
         return org.thepalaceproject.webpub.cmdline.internal.DBSerialization.internal_static_org_thepalaceproject_webpub_cmdline_internal_DBSLink1_descriptor;
       }
 
       @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-          internalGetFieldAccessorTable() {
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable internalGetFieldAccessorTable()
+      {
         return org.thepalaceproject.webpub.cmdline.internal.DBSerialization.internal_static_org_thepalaceproject_webpub_cmdline_internal_DBSLink1_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.class, org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.Builder.class);
+          .ensureFieldAccessorsInitialized(
+            org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.class,
+            org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.Builder.class);
       }
 
-      // Construct using org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.newBuilder()
-      private Builder() {
+      // Construct using
+      // org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.newBuilder()
+      private Builder()
+      {
 
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent)
+      {
         super(parent);
 
       }
+
       @java.lang.Override
-      public Builder clear() {
+      public Builder clear()
+      {
         super.clear();
         type_ = "";
 
@@ -646,19 +799,23 @@ public final class DBSerialization {
       }
 
       @java.lang.Override
-      public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
+      public com.google.protobuf.Descriptors.Descriptor getDescriptorForType()
+      {
         return org.thepalaceproject.webpub.cmdline.internal.DBSerialization.internal_static_org_thepalaceproject_webpub_cmdline_internal_DBSLink1_descriptor;
       }
 
       @java.lang.Override
-      public org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 getDefaultInstanceForType() {
-        return org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.getDefaultInstance();
+      public org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 getDefaultInstanceForType()
+      {
+        return org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1
+          .getDefaultInstance();
       }
 
       @java.lang.Override
-      public org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 build() {
-        org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 result = buildPartial();
+      public org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 build()
+      {
+        org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 result =
+          buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -666,8 +823,11 @@ public final class DBSerialization {
       }
 
       @java.lang.Override
-      public org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 buildPartial() {
-        org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 result = new org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1(this);
+      public org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 buildPartial()
+      {
+        org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 result =
+          new org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1(
+            this);
         result.type_ = type_;
         result.relation_ = relation_;
         result.title_ = title_;
@@ -682,49 +842,70 @@ public final class DBSerialization {
       }
 
       @java.lang.Override
-      public Builder clone() {
+      public Builder clone()
+      {
         return super.clone();
       }
+
       @java.lang.Override
       public Builder setField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        java.lang.Object value)
+      {
         return super.setField(field, value);
       }
+
       @java.lang.Override
       public Builder clearField(
-          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        com.google.protobuf.Descriptors.FieldDescriptor field)
+      {
         return super.clearField(field);
       }
+
       @java.lang.Override
       public Builder clearOneof(
-          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        com.google.protobuf.Descriptors.OneofDescriptor oneof)
+      {
         return super.clearOneof(oneof);
       }
+
       @java.lang.Override
       public Builder setRepeatedField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, java.lang.Object value) {
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        int index,
+        java.lang.Object value)
+      {
         return super.setRepeatedField(field, index, value);
       }
+
       @java.lang.Override
       public Builder addRepeatedField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        java.lang.Object value)
+      {
         return super.addRepeatedField(field, value);
       }
+
       @java.lang.Override
-      public Builder mergeFrom(com.google.protobuf.Message other) {
+      public Builder mergeFrom(
+        com.google.protobuf.Message other)
+      {
         if (other instanceof org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1) {
-          return mergeFrom((org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1)other);
+          return mergeFrom(
+            (org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1) other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 other) {
-        if (other == org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.getDefaultInstance()) return this;
+      public Builder mergeFrom(
+        org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 other)
+      {
+        if (other
+          == org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1
+            .getDefaultInstance())
+          return this;
         if (!other.getType().isEmpty()) {
           type_ = other.type_;
           onChanged();
@@ -762,15 +943,17 @@ public final class DBSerialization {
       }
 
       @java.lang.Override
-      public final boolean isInitialized() {
+      public final boolean isInitialized()
+      {
         return true;
       }
 
       @java.lang.Override
       public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException
+      {
         if (extensionRegistry == null) {
           throw new java.lang.NullPointerException();
         }
@@ -844,15 +1027,18 @@ public final class DBSerialization {
       }
 
       private java.lang.Object type_ = "";
+
       /**
        * <code>string type = 1;</code>
+       * 
        * @return The type.
        */
-      public java.lang.String getType() {
+      public java.lang.String getType()
+      {
         java.lang.Object ref = type_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
           type_ = s;
           return s;
@@ -860,75 +1046,89 @@ public final class DBSerialization {
           return (java.lang.String) ref;
         }
       }
+
       /**
        * <code>string type = 1;</code>
+       * 
        * @return The bytes for type.
        */
-      public com.google.protobuf.ByteString
-          getTypeBytes() {
+      public com.google.protobuf.ByteString getTypeBytes()
+      {
         java.lang.Object ref = type_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+          com.google.protobuf.ByteString b =
+            com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
           type_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
+
       /**
        * <code>string type = 1;</code>
+       * 
        * @param value The type to set.
        * @return This builder for chaining.
        */
       public Builder setType(
-          java.lang.String value) {
+        java.lang.String value)
+      {
         if (value == null) {
-    throw new NullPointerException();
-  }
-  
+          throw new NullPointerException();
+        }
+
         type_ = value;
         onChanged();
         return this;
       }
+
       /**
        * <code>string type = 1;</code>
+       * 
        * @return This builder for chaining.
        */
-      public Builder clearType() {
-        
+      public Builder clearType()
+      {
+
         type_ = getDefaultInstance().getType();
         onChanged();
         return this;
       }
+
       /**
        * <code>string type = 1;</code>
+       * 
        * @param value The bytes for type to set.
        * @return This builder for chaining.
        */
       public Builder setTypeBytes(
-          com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value)
+      {
         if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
+          throw new NullPointerException();
+        }
+        checkByteStringIsUtf8(value);
+
         type_ = value;
         onChanged();
         return this;
       }
 
       private java.lang.Object relation_ = "";
+
       /**
        * <code>string relation = 2;</code>
+       * 
        * @return The relation.
        */
-      public java.lang.String getRelation() {
+      public java.lang.String getRelation()
+      {
         java.lang.Object ref = relation_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
           relation_ = s;
           return s;
@@ -936,75 +1136,89 @@ public final class DBSerialization {
           return (java.lang.String) ref;
         }
       }
+
       /**
        * <code>string relation = 2;</code>
+       * 
        * @return The bytes for relation.
        */
-      public com.google.protobuf.ByteString
-          getRelationBytes() {
+      public com.google.protobuf.ByteString getRelationBytes()
+      {
         java.lang.Object ref = relation_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+          com.google.protobuf.ByteString b =
+            com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
           relation_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
+
       /**
        * <code>string relation = 2;</code>
+       * 
        * @param value The relation to set.
        * @return This builder for chaining.
        */
       public Builder setRelation(
-          java.lang.String value) {
+        java.lang.String value)
+      {
         if (value == null) {
-    throw new NullPointerException();
-  }
-  
+          throw new NullPointerException();
+        }
+
         relation_ = value;
         onChanged();
         return this;
       }
+
       /**
        * <code>string relation = 2;</code>
+       * 
        * @return This builder for chaining.
        */
-      public Builder clearRelation() {
-        
+      public Builder clearRelation()
+      {
+
         relation_ = getDefaultInstance().getRelation();
         onChanged();
         return this;
       }
+
       /**
        * <code>string relation = 2;</code>
+       * 
        * @param value The bytes for relation to set.
        * @return This builder for chaining.
        */
       public Builder setRelationBytes(
-          com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value)
+      {
         if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
+          throw new NullPointerException();
+        }
+        checkByteStringIsUtf8(value);
+
         relation_ = value;
         onChanged();
         return this;
       }
 
       private java.lang.Object title_ = "";
+
       /**
        * <code>string title = 3;</code>
+       * 
        * @return The title.
        */
-      public java.lang.String getTitle() {
+      public java.lang.String getTitle()
+      {
         java.lang.Object ref = title_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
           title_ = s;
           return s;
@@ -1012,199 +1226,253 @@ public final class DBSerialization {
           return (java.lang.String) ref;
         }
       }
+
       /**
        * <code>string title = 3;</code>
+       * 
        * @return The bytes for title.
        */
-      public com.google.protobuf.ByteString
-          getTitleBytes() {
+      public com.google.protobuf.ByteString getTitleBytes()
+      {
         java.lang.Object ref = title_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+          com.google.protobuf.ByteString b =
+            com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
           title_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
+
       /**
        * <code>string title = 3;</code>
+       * 
        * @param value The title to set.
        * @return This builder for chaining.
        */
       public Builder setTitle(
-          java.lang.String value) {
+        java.lang.String value)
+      {
         if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        title_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string title = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTitle() {
-        
-        title_ = getDefaultInstance().getTitle();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string title = 3;</code>
-       * @param value The bytes for title to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTitleBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
+          throw new NullPointerException();
+        }
+
         title_ = value;
         onChanged();
         return this;
       }
 
-      private int height_ ;
+      /**
+       * <code>string title = 3;</code>
+       * 
+       * @return This builder for chaining.
+       */
+      public Builder clearTitle()
+      {
+
+        title_ = getDefaultInstance().getTitle();
+        onChanged();
+        return this;
+      }
+
+      /**
+       * <code>string title = 3;</code>
+       * 
+       * @param value The bytes for title to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTitleBytes(
+        com.google.protobuf.ByteString value)
+      {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        checkByteStringIsUtf8(value);
+
+        title_ = value;
+        onChanged();
+        return this;
+      }
+
+      private int height_;
+
       /**
        * <code>uint32 height = 4;</code>
+       * 
        * @return The height.
        */
       @java.lang.Override
-      public int getHeight() {
+      public int getHeight()
+      {
         return height_;
       }
+
       /**
        * <code>uint32 height = 4;</code>
+       * 
        * @param value The height to set.
        * @return This builder for chaining.
        */
-      public Builder setHeight(int value) {
-        
+      public Builder setHeight(
+        int value)
+      {
+
         height_ = value;
         onChanged();
         return this;
       }
+
       /**
        * <code>uint32 height = 4;</code>
+       * 
        * @return This builder for chaining.
        */
-      public Builder clearHeight() {
-        
+      public Builder clearHeight()
+      {
+
         height_ = 0;
         onChanged();
         return this;
       }
 
-      private int width_ ;
+      private int width_;
+
       /**
        * <code>uint32 width = 5;</code>
+       * 
        * @return The width.
        */
       @java.lang.Override
-      public int getWidth() {
+      public int getWidth()
+      {
         return width_;
       }
+
       /**
        * <code>uint32 width = 5;</code>
+       * 
        * @param value The width to set.
        * @return This builder for chaining.
        */
-      public Builder setWidth(int value) {
-        
+      public Builder setWidth(
+        int value)
+      {
+
         width_ = value;
         onChanged();
         return this;
       }
+
       /**
        * <code>uint32 width = 5;</code>
+       * 
        * @return This builder for chaining.
        */
-      public Builder clearWidth() {
-        
+      public Builder clearWidth()
+      {
+
         width_ = 0;
         onChanged();
         return this;
       }
 
-      private double duration_ ;
+      private double duration_;
+
       /**
        * <code>double duration = 6;</code>
+       * 
        * @return The duration.
        */
       @java.lang.Override
-      public double getDuration() {
+      public double getDuration()
+      {
         return duration_;
       }
+
       /**
        * <code>double duration = 6;</code>
+       * 
        * @param value The duration to set.
        * @return This builder for chaining.
        */
-      public Builder setDuration(double value) {
-        
+      public Builder setDuration(
+        double value)
+      {
+
         duration_ = value;
         onChanged();
         return this;
       }
+
       /**
        * <code>double duration = 6;</code>
+       * 
        * @return This builder for chaining.
        */
-      public Builder clearDuration() {
-        
+      public Builder clearDuration()
+      {
+
         duration_ = 0D;
         onChanged();
         return this;
       }
 
-      private double bitrate_ ;
+      private double bitrate_;
+
       /**
        * <code>double bitrate = 7;</code>
+       * 
        * @return The bitrate.
        */
       @java.lang.Override
-      public double getBitrate() {
+      public double getBitrate()
+      {
         return bitrate_;
       }
+
       /**
        * <code>double bitrate = 7;</code>
+       * 
        * @param value The bitrate to set.
        * @return This builder for chaining.
        */
-      public Builder setBitrate(double value) {
-        
+      public Builder setBitrate(
+        double value)
+      {
+
         bitrate_ = value;
         onChanged();
         return this;
       }
+
       /**
        * <code>double bitrate = 7;</code>
+       * 
        * @return This builder for chaining.
        */
-      public Builder clearBitrate() {
-        
+      public Builder clearBitrate()
+      {
+
         bitrate_ = 0D;
         onChanged();
         return this;
       }
 
       private java.lang.Object href_ = "";
+
       /**
        * <code>string href = 8;</code>
+       * 
        * @return The href.
        */
-      public java.lang.String getHref() {
+      public java.lang.String getHref()
+      {
         java.lang.Object ref = href_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
           href_ = s;
           return s;
@@ -1212,107 +1480,130 @@ public final class DBSerialization {
           return (java.lang.String) ref;
         }
       }
+
       /**
        * <code>string href = 8;</code>
+       * 
        * @return The bytes for href.
        */
-      public com.google.protobuf.ByteString
-          getHrefBytes() {
+      public com.google.protobuf.ByteString getHrefBytes()
+      {
         java.lang.Object ref = href_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+          com.google.protobuf.ByteString b =
+            com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
           href_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
+
       /**
        * <code>string href = 8;</code>
+       * 
        * @param value The href to set.
        * @return This builder for chaining.
        */
       public Builder setHref(
-          java.lang.String value) {
+        java.lang.String value)
+      {
         if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        href_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string href = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearHref() {
-        
-        href_ = getDefaultInstance().getHref();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string href = 8;</code>
-       * @param value The bytes for href to set.
-       * @return This builder for chaining.
-       */
-      public Builder setHrefBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
+          throw new NullPointerException();
+        }
+
         href_ = value;
         onChanged();
         return this;
       }
 
-      private boolean templated_ ;
+      /**
+       * <code>string href = 8;</code>
+       * 
+       * @return This builder for chaining.
+       */
+      public Builder clearHref()
+      {
+
+        href_ = getDefaultInstance().getHref();
+        onChanged();
+        return this;
+      }
+
+      /**
+       * <code>string href = 8;</code>
+       * 
+       * @param value The bytes for href to set.
+       * @return This builder for chaining.
+       */
+      public Builder setHrefBytes(
+        com.google.protobuf.ByteString value)
+      {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        checkByteStringIsUtf8(value);
+
+        href_ = value;
+        onChanged();
+        return this;
+      }
+
+      private boolean templated_;
+
       /**
        * <code>bool templated = 9;</code>
+       * 
        * @return The templated.
        */
       @java.lang.Override
-      public boolean getTemplated() {
+      public boolean getTemplated()
+      {
         return templated_;
       }
+
       /**
        * <code>bool templated = 9;</code>
+       * 
        * @param value The templated to set.
        * @return This builder for chaining.
        */
-      public Builder setTemplated(boolean value) {
-        
+      public Builder setTemplated(
+        boolean value)
+      {
+
         templated_ = value;
         onChanged();
         return this;
       }
+
       /**
        * <code>bool templated = 9;</code>
+       * 
        * @return This builder for chaining.
        */
-      public Builder clearTemplated() {
-        
+      public Builder clearTemplated()
+      {
+
         templated_ = false;
         onChanged();
         return this;
       }
+
       @java.lang.Override
       public final Builder setUnknownFields(
-          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        final com.google.protobuf.UnknownFieldSet unknownFields)
+      {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
       public final Builder mergeUnknownFields(
-          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        final com.google.protobuf.UnknownFieldSet unknownFields)
+      {
         return super.mergeUnknownFields(unknownFields);
       }
-
 
       // @@protoc_insertion_point(builder_scope:org.thepalaceproject.webpub.cmdline.internal.DBSLink1)
     }
@@ -1320,164 +1611,197 @@ public final class DBSerialization {
     // @@protoc_insertion_point(class_scope:org.thepalaceproject.webpub.cmdline.internal.DBSLink1)
     private static final org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1();
+      DEFAULT_INSTANCE =
+        new org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1();
     }
 
-    public static org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 getDefaultInstance() {
+    public static org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 getDefaultInstance()
+    {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<DBSLink1>
-        PARSER = new com.google.protobuf.AbstractParser<DBSLink1>() {
-      @java.lang.Override
-      public DBSLink1 parsePartialFrom(
+    private static final com.google.protobuf.Parser<DBSLink1> PARSER =
+      new com.google.protobuf.AbstractParser<DBSLink1>()
+      {
+        @java.lang.Override
+        public DBSLink1 parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        Builder builder = newBuilder();
-        try {
-          builder.mergeFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          throw e.setUnfinishedMessage(builder.buildPartial());
-        } catch (com.google.protobuf.UninitializedMessageException e) {
-          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
-        } catch (java.io.IOException e) {
-          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+          throws com.google.protobuf.InvalidProtocolBufferException
+        {
+          Builder builder = newBuilder();
+          try {
+            builder.mergeFrom(input, extensionRegistry);
+          } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+            throw e.setUnfinishedMessage(builder.buildPartial());
+          } catch (com.google.protobuf.UninitializedMessageException e) {
+            throw e.asInvalidProtocolBufferException()
               .setUnfinishedMessage(builder.buildPartial());
+          } catch (java.io.IOException e) {
+            throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+          }
+          return builder.buildPartial();
         }
-        return builder.buildPartial();
-      }
-    };
+      };
 
-    public static com.google.protobuf.Parser<DBSLink1> parser() {
+    public static com.google.protobuf.Parser<DBSLink1> parser()
+    {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<DBSLink1> getParserForType() {
+    public com.google.protobuf.Parser<DBSLink1> getParserForType()
+    {
       return PARSER;
     }
 
     @java.lang.Override
-    public org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 getDefaultInstanceForType() {
+    public org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 getDefaultInstanceForType()
+    {
       return DEFAULT_INSTANCE;
     }
 
   }
 
-  public interface DBSAccountProviderDescription1OrBuilder extends
-      // @@protoc_insertion_point(interface_extends:org.thepalaceproject.webpub.cmdline.internal.DBSAccountProviderDescription1)
-      com.google.protobuf.MessageOrBuilder {
+  public interface DBSAccountProviderDescription1OrBuilder
+    extends
+    // @@protoc_insertion_point(interface_extends:org.thepalaceproject.webpub.cmdline.internal.DBSAccountProviderDescription1)
+    com.google.protobuf.MessageOrBuilder
+  {
 
     /**
      * <code>string id = 1;</code>
+     * 
      * @return The id.
      */
     java.lang.String getId();
+
     /**
      * <code>string id = 1;</code>
+     * 
      * @return The bytes for id.
      */
-    com.google.protobuf.ByteString
-        getIdBytes();
+    com.google.protobuf.ByteString getIdBytes();
 
     /**
      * <code>string title = 2;</code>
+     * 
      * @return The title.
      */
     java.lang.String getTitle();
+
     /**
      * <code>string title = 2;</code>
+     * 
      * @return The bytes for title.
      */
-    com.google.protobuf.ByteString
-        getTitleBytes();
+    com.google.protobuf.ByteString getTitleBytes();
 
     /**
      * <code>string description = 3;</code>
+     * 
      * @return The description.
      */
     java.lang.String getDescription();
+
     /**
      * <code>string description = 3;</code>
+     * 
      * @return The bytes for description.
      */
-    com.google.protobuf.ByteString
-        getDescriptionBytes();
+    com.google.protobuf.ByteString getDescriptionBytes();
 
     /**
      * <code>string updated = 4;</code>
+     * 
      * @return The updated.
      */
     java.lang.String getUpdated();
+
     /**
      * <code>string updated = 4;</code>
+     * 
      * @return The bytes for updated.
      */
-    com.google.protobuf.ByteString
-        getUpdatedBytes();
+    com.google.protobuf.ByteString getUpdatedBytes();
 
     /**
      * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 links = 5;</code>
      */
-    java.util.List<org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1> 
-        getLinksList();
+    java.util.List<org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1> getLinksList();
+
     /**
      * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 links = 5;</code>
      */
-    org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 getLinks(int index);
+    org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 getLinks(
+      int index);
+
     /**
      * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 links = 5;</code>
      */
     int getLinksCount();
+
     /**
      * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 links = 5;</code>
      */
-    java.util.List<? extends org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1OrBuilder> 
-        getLinksOrBuilderList();
+    java.util.List<? extends org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1OrBuilder> getLinksOrBuilderList();
+
     /**
      * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 links = 5;</code>
      */
     org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1OrBuilder getLinksOrBuilder(
-        int index);
+      int index);
 
     /**
      * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 images = 6;</code>
      */
-    java.util.List<org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1> 
-        getImagesList();
+    java.util.List<org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1> getImagesList();
+
     /**
      * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 images = 6;</code>
      */
-    org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 getImages(int index);
+    org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 getImages(
+      int index);
+
     /**
      * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 images = 6;</code>
      */
     int getImagesCount();
+
     /**
      * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 images = 6;</code>
      */
-    java.util.List<? extends org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1OrBuilder> 
-        getImagesOrBuilderList();
+    java.util.List<? extends org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1OrBuilder> getImagesOrBuilderList();
+
     /**
      * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 images = 6;</code>
      */
     org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1OrBuilder getImagesOrBuilder(
-        int index);
+      int index);
   }
+
   /**
-   * Protobuf type {@code org.thepalaceproject.webpub.cmdline.internal.DBSAccountProviderDescription1}
+   * Protobuf type
+   * {@code org.thepalaceproject.webpub.cmdline.internal.DBSAccountProviderDescription1}
    */
   public static final class DBSAccountProviderDescription1 extends
-      com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:org.thepalaceproject.webpub.cmdline.internal.DBSAccountProviderDescription1)
-      DBSAccountProviderDescription1OrBuilder {
-  private static final long serialVersionUID = 0L;
+    com.google.protobuf.GeneratedMessageV3
+    implements
+    // @@protoc_insertion_point(message_implements:org.thepalaceproject.webpub.cmdline.internal.DBSAccountProviderDescription1)
+    DBSAccountProviderDescription1OrBuilder
+  {
+    private static final long serialVersionUID = 0L;
+
     // Use DBSAccountProviderDescription1.newBuilder() to construct.
-    private DBSAccountProviderDescription1(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    private DBSAccountProviderDescription1(
+      com.google.protobuf.GeneratedMessageV3.Builder<?> builder)
+    {
       super(builder);
     }
-    private DBSAccountProviderDescription1() {
+
+    private DBSAccountProviderDescription1()
+    {
       id_ = "";
       title_ = "";
       description_ = "";
@@ -1487,61 +1811,71 @@ public final class DBSerialization {
     }
 
     @java.lang.Override
-    @SuppressWarnings({"unused"})
+    @SuppressWarnings({
+      "unused"
+    })
     protected java.lang.Object newInstance(
-        UnusedPrivateParameter unused) {
+      UnusedPrivateParameter unused)
+    {
       return new DBSAccountProviderDescription1();
     }
 
     @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields()
+    {
       return this.unknownFields;
     }
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
+
+    public static final com.google.protobuf.Descriptors.Descriptor getDescriptor()
+    {
       return org.thepalaceproject.webpub.cmdline.internal.DBSerialization.internal_static_org_thepalaceproject_webpub_cmdline_internal_DBSAccountProviderDescription1_descriptor;
     }
 
     @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable internalGetFieldAccessorTable()
+    {
       return org.thepalaceproject.webpub.cmdline.internal.DBSerialization.internal_static_org_thepalaceproject_webpub_cmdline_internal_DBSAccountProviderDescription1_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1.class, org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1.Builder.class);
+        .ensureFieldAccessorsInitialized(
+          org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1.class,
+          org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1.Builder.class);
     }
 
     public static final int ID_FIELD_NUMBER = 1;
     private volatile java.lang.Object id_;
+
     /**
      * <code>string id = 1;</code>
+     * 
      * @return The id.
      */
     @java.lang.Override
-    public java.lang.String getId() {
+    public java.lang.String getId()
+    {
       java.lang.Object ref = id_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
+        com.google.protobuf.ByteString bs =
+          (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         id_ = s;
         return s;
       }
     }
+
     /**
      * <code>string id = 1;</code>
+     * 
      * @return The bytes for id.
      */
     @java.lang.Override
-    public com.google.protobuf.ByteString
-        getIdBytes() {
+    public com.google.protobuf.ByteString getIdBytes()
+    {
       java.lang.Object ref = id_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+        com.google.protobuf.ByteString b =
+          com.google.protobuf.ByteString.copyFromUtf8(
+            (java.lang.String) ref);
         id_ = b;
         return b;
       } else {
@@ -1551,35 +1885,40 @@ public final class DBSerialization {
 
     public static final int TITLE_FIELD_NUMBER = 2;
     private volatile java.lang.Object title_;
+
     /**
      * <code>string title = 2;</code>
+     * 
      * @return The title.
      */
     @java.lang.Override
-    public java.lang.String getTitle() {
+    public java.lang.String getTitle()
+    {
       java.lang.Object ref = title_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
+        com.google.protobuf.ByteString bs =
+          (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         title_ = s;
         return s;
       }
     }
+
     /**
      * <code>string title = 2;</code>
+     * 
      * @return The bytes for title.
      */
     @java.lang.Override
-    public com.google.protobuf.ByteString
-        getTitleBytes() {
+    public com.google.protobuf.ByteString getTitleBytes()
+    {
       java.lang.Object ref = title_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+        com.google.protobuf.ByteString b =
+          com.google.protobuf.ByteString.copyFromUtf8(
+            (java.lang.String) ref);
         title_ = b;
         return b;
       } else {
@@ -1589,35 +1928,40 @@ public final class DBSerialization {
 
     public static final int DESCRIPTION_FIELD_NUMBER = 3;
     private volatile java.lang.Object description_;
+
     /**
      * <code>string description = 3;</code>
+     * 
      * @return The description.
      */
     @java.lang.Override
-    public java.lang.String getDescription() {
+    public java.lang.String getDescription()
+    {
       java.lang.Object ref = description_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
+        com.google.protobuf.ByteString bs =
+          (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         description_ = s;
         return s;
       }
     }
+
     /**
      * <code>string description = 3;</code>
+     * 
      * @return The bytes for description.
      */
     @java.lang.Override
-    public com.google.protobuf.ByteString
-        getDescriptionBytes() {
+    public com.google.protobuf.ByteString getDescriptionBytes()
+    {
       java.lang.Object ref = description_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+        com.google.protobuf.ByteString b =
+          com.google.protobuf.ByteString.copyFromUtf8(
+            (java.lang.String) ref);
         description_ = b;
         return b;
       } else {
@@ -1627,35 +1971,40 @@ public final class DBSerialization {
 
     public static final int UPDATED_FIELD_NUMBER = 4;
     private volatile java.lang.Object updated_;
+
     /**
      * <code>string updated = 4;</code>
+     * 
      * @return The updated.
      */
     @java.lang.Override
-    public java.lang.String getUpdated() {
+    public java.lang.String getUpdated()
+    {
       java.lang.Object ref = updated_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
+        com.google.protobuf.ByteString bs =
+          (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         updated_ = s;
         return s;
       }
     }
+
     /**
      * <code>string updated = 4;</code>
+     * 
      * @return The bytes for updated.
      */
     @java.lang.Override
-    public com.google.protobuf.ByteString
-        getUpdatedBytes() {
+    public com.google.protobuf.ByteString getUpdatedBytes()
+    {
       java.lang.Object ref = updated_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+        com.google.protobuf.ByteString b =
+          com.google.protobuf.ByteString.copyFromUtf8(
+            (java.lang.String) ref);
         updated_ = b;
         return b;
       } else {
@@ -1665,98 +2014,124 @@ public final class DBSerialization {
 
     public static final int LINKS_FIELD_NUMBER = 5;
     private java.util.List<org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1> links_;
+
     /**
      * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 links = 5;</code>
      */
     @java.lang.Override
-    public java.util.List<org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1> getLinksList() {
+    public java.util.List<org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1> getLinksList()
+    {
       return links_;
     }
+
     /**
      * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 links = 5;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1OrBuilder> 
-        getLinksOrBuilderList() {
+    public java.util.List<? extends org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1OrBuilder> getLinksOrBuilderList()
+    {
       return links_;
     }
+
     /**
      * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 links = 5;</code>
      */
     @java.lang.Override
-    public int getLinksCount() {
+    public int getLinksCount()
+    {
       return links_.size();
     }
+
     /**
      * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 links = 5;</code>
      */
     @java.lang.Override
-    public org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 getLinks(int index) {
+    public org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 getLinks(
+      int index)
+    {
       return links_.get(index);
     }
+
     /**
      * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 links = 5;</code>
      */
     @java.lang.Override
     public org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1OrBuilder getLinksOrBuilder(
-        int index) {
+      int index)
+    {
       return links_.get(index);
     }
 
     public static final int IMAGES_FIELD_NUMBER = 6;
     private java.util.List<org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1> images_;
+
     /**
      * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 images = 6;</code>
      */
     @java.lang.Override
-    public java.util.List<org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1> getImagesList() {
+    public java.util.List<org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1> getImagesList()
+    {
       return images_;
     }
+
     /**
      * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 images = 6;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1OrBuilder> 
-        getImagesOrBuilderList() {
+    public java.util.List<? extends org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1OrBuilder> getImagesOrBuilderList()
+    {
       return images_;
     }
+
     /**
      * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 images = 6;</code>
      */
     @java.lang.Override
-    public int getImagesCount() {
+    public int getImagesCount()
+    {
       return images_.size();
     }
+
     /**
      * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 images = 6;</code>
      */
     @java.lang.Override
-    public org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 getImages(int index) {
+    public org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 getImages(
+      int index)
+    {
       return images_.get(index);
     }
+
     /**
      * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 images = 6;</code>
      */
     @java.lang.Override
     public org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1OrBuilder getImagesOrBuilder(
-        int index) {
+      int index)
+    {
       return images_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
+
     @java.lang.Override
-    public final boolean isInitialized() {
+    public final boolean isInitialized()
+    {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
+      if (isInitialized == 1)
+        return true;
+      if (isInitialized == 0)
+        return false;
 
       memoizedIsInitialized = 1;
       return true;
     }
 
     @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
+    public void writeTo(
+      com.google.protobuf.CodedOutputStream output)
+      throws java.io.IOException
+    {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(id_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 1, id_);
       }
@@ -1764,7 +2139,8 @@ public final class DBSerialization {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 2, title_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(description_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, description_);
+        com.google.protobuf.GeneratedMessageV3
+          .writeString(output, 3, description_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(updated_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 4, updated_);
@@ -1779,30 +2155,39 @@ public final class DBSerialization {
     }
 
     @java.lang.Override
-    public int getSerializedSize() {
+    public int getSerializedSize()
+    {
       int size = memoizedSize;
-      if (size != -1) return size;
+      if (size != -1)
+        return size;
 
       size = 0;
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(id_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, id_);
+        size +=
+          com.google.protobuf.GeneratedMessageV3.computeStringSize(1, id_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(title_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, title_);
+        size +=
+          com.google.protobuf.GeneratedMessageV3.computeStringSize(2, title_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(description_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, description_);
+        size +=
+          com.google.protobuf.GeneratedMessageV3
+            .computeStringSize(3, description_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(updated_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, updated_);
+        size +=
+          com.google.protobuf.GeneratedMessageV3.computeStringSize(4, updated_);
       }
       for (int i = 0; i < links_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, links_.get(i));
+        size +=
+          com.google.protobuf.CodedOutputStream
+            .computeMessageSize(5, links_.get(i));
       }
       for (int i = 0; i < images_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, images_.get(i));
+        size +=
+          com.google.protobuf.CodedOutputStream
+            .computeMessageSize(6, images_.get(i));
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -1810,33 +2195,44 @@ public final class DBSerialization {
     }
 
     @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
+    public boolean equals(
+      final java.lang.Object obj)
+    {
       if (obj == this) {
-       return true;
+        return true;
       }
       if (!(obj instanceof org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1)) {
         return super.equals(obj);
       }
-      org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1 other = (org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1) obj;
+      org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1 other =
+        (org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1) obj;
 
       if (!getId()
-          .equals(other.getId())) return false;
+        .equals(other.getId()))
+        return false;
       if (!getTitle()
-          .equals(other.getTitle())) return false;
+        .equals(other.getTitle()))
+        return false;
       if (!getDescription()
-          .equals(other.getDescription())) return false;
+        .equals(other.getDescription()))
+        return false;
       if (!getUpdated()
-          .equals(other.getUpdated())) return false;
+        .equals(other.getUpdated()))
+        return false;
       if (!getLinksList()
-          .equals(other.getLinksList())) return false;
+        .equals(other.getLinksList()))
+        return false;
       if (!getImagesList()
-          .equals(other.getImagesList())) return false;
-      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
+        .equals(other.getImagesList()))
+        return false;
+      if (!getUnknownFields().equals(other.getUnknownFields()))
+        return false;
       return true;
     }
 
     @java.lang.Override
-    public int hashCode() {
+    public int hashCode()
+    {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
       }
@@ -1864,127 +2260,175 @@ public final class DBSerialization {
     }
 
     public static org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1 parseFrom(
-        java.nio.ByteBuffer data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
+      java.nio.ByteBuffer data)
+      throws com.google.protobuf.InvalidProtocolBufferException
+    {
       return PARSER.parseFrom(data);
     }
+
     public static org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1 parseFrom(
-        java.nio.ByteBuffer data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
+      java.nio.ByteBuffer data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException
+    {
       return PARSER.parseFrom(data, extensionRegistry);
     }
+
     public static org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1 parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
+      com.google.protobuf.ByteString data)
+      throws com.google.protobuf.InvalidProtocolBufferException
+    {
       return PARSER.parseFrom(data);
     }
+
     public static org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1 parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
+      com.google.protobuf.ByteString data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException
+    {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1 parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
+
+    public static org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1 parseFrom(
+      byte[] data)
+      throws com.google.protobuf.InvalidProtocolBufferException
+    {
       return PARSER.parseFrom(data);
     }
+
     public static org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1 parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
+      byte[] data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException
+    {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1 parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input);
-    }
+
     public static org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1 parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
+      java.io.InputStream input)
+      throws java.io.IOException
+    {
       return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
+        .parseWithIOException(PARSER, input);
     }
-    public static org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1 parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
+
+    public static org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1 parseFrom(
+      java.io.InputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException
+    {
       return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input);
+        .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1 parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
+      java.io.InputStream input)
+      throws java.io.IOException
+    {
       return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+        .parseDelimitedWithIOException(PARSER, input);
     }
-    public static org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1 parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
+
+    public static org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1 parseDelimitedFrom(
+      java.io.InputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException
+    {
       return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input);
+        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1 parseFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
+      com.google.protobuf.CodedInputStream input)
+      throws java.io.IOException
+    {
       return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
+        .parseWithIOException(PARSER, input);
+    }
+
+    public static org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1 parseFrom(
+      com.google.protobuf.CodedInputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException
+    {
+      return com.google.protobuf.GeneratedMessageV3
+        .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
     @java.lang.Override
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder() {
+    public Builder newBuilderForType()
+    {
+      return newBuilder();
+    }
+
+    public static Builder newBuilder()
+    {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1 prototype) {
+
+    public static Builder newBuilder(
+      org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1 prototype)
+    {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
+
     @java.lang.Override
-    public Builder toBuilder() {
+    public Builder toBuilder()
+    {
       return this == DEFAULT_INSTANCE
-          ? new Builder() : new Builder().mergeFrom(this);
+        ? new Builder()
+        : new Builder().mergeFrom(this);
     }
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent)
+    {
       Builder builder = new Builder(parent);
       return builder;
     }
+
     /**
-     * Protobuf type {@code org.thepalaceproject.webpub.cmdline.internal.DBSAccountProviderDescription1}
+     * Protobuf type
+     * {@code org.thepalaceproject.webpub.cmdline.internal.DBSAccountProviderDescription1}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:org.thepalaceproject.webpub.cmdline.internal.DBSAccountProviderDescription1)
-        org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1OrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
+      com.google.protobuf.GeneratedMessageV3.Builder<Builder>
+      implements
+      // @@protoc_insertion_point(builder_implements:org.thepalaceproject.webpub.cmdline.internal.DBSAccountProviderDescription1)
+      org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1OrBuilder
+    {
+      public static final com.google.protobuf.Descriptors.Descriptor getDescriptor()
+      {
         return org.thepalaceproject.webpub.cmdline.internal.DBSerialization.internal_static_org_thepalaceproject_webpub_cmdline_internal_DBSAccountProviderDescription1_descriptor;
       }
 
       @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-          internalGetFieldAccessorTable() {
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable internalGetFieldAccessorTable()
+      {
         return org.thepalaceproject.webpub.cmdline.internal.DBSerialization.internal_static_org_thepalaceproject_webpub_cmdline_internal_DBSAccountProviderDescription1_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1.class, org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1.Builder.class);
+          .ensureFieldAccessorsInitialized(
+            org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1.class,
+            org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1.Builder.class);
       }
 
-      // Construct using org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1.newBuilder()
-      private Builder() {
+      // Construct using
+      // org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1.newBuilder()
+      private Builder()
+      {
 
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent)
+      {
         super(parent);
 
       }
+
       @java.lang.Override
-      public Builder clear() {
+      public Builder clear()
+      {
         super.clear();
         id_ = "";
 
@@ -2012,19 +2456,23 @@ public final class DBSerialization {
       }
 
       @java.lang.Override
-      public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
+      public com.google.protobuf.Descriptors.Descriptor getDescriptorForType()
+      {
         return org.thepalaceproject.webpub.cmdline.internal.DBSerialization.internal_static_org_thepalaceproject_webpub_cmdline_internal_DBSAccountProviderDescription1_descriptor;
       }
 
       @java.lang.Override
-      public org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1 getDefaultInstanceForType() {
-        return org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1.getDefaultInstance();
+      public org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1 getDefaultInstanceForType()
+      {
+        return org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1
+          .getDefaultInstance();
       }
 
       @java.lang.Override
-      public org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1 build() {
-        org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1 result = buildPartial();
+      public org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1 build()
+      {
+        org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1 result =
+          buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -2032,8 +2480,11 @@ public final class DBSerialization {
       }
 
       @java.lang.Override
-      public org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1 buildPartial() {
-        org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1 result = new org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1(this);
+      public org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1 buildPartial()
+      {
+        org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1 result =
+          new org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1(
+            this);
         int from_bitField0_ = bitField0_;
         result.id_ = id_;
         result.title_ = title_;
@@ -2062,49 +2513,70 @@ public final class DBSerialization {
       }
 
       @java.lang.Override
-      public Builder clone() {
+      public Builder clone()
+      {
         return super.clone();
       }
+
       @java.lang.Override
       public Builder setField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        java.lang.Object value)
+      {
         return super.setField(field, value);
       }
+
       @java.lang.Override
       public Builder clearField(
-          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        com.google.protobuf.Descriptors.FieldDescriptor field)
+      {
         return super.clearField(field);
       }
+
       @java.lang.Override
       public Builder clearOneof(
-          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        com.google.protobuf.Descriptors.OneofDescriptor oneof)
+      {
         return super.clearOneof(oneof);
       }
+
       @java.lang.Override
       public Builder setRepeatedField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, java.lang.Object value) {
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        int index,
+        java.lang.Object value)
+      {
         return super.setRepeatedField(field, index, value);
       }
+
       @java.lang.Override
       public Builder addRepeatedField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        java.lang.Object value)
+      {
         return super.addRepeatedField(field, value);
       }
+
       @java.lang.Override
-      public Builder mergeFrom(com.google.protobuf.Message other) {
+      public Builder mergeFrom(
+        com.google.protobuf.Message other)
+      {
         if (other instanceof org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1) {
-          return mergeFrom((org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1)other);
+          return mergeFrom(
+            (org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1) other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1 other) {
-        if (other == org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1.getDefaultInstance()) return this;
+      public Builder mergeFrom(
+        org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1 other)
+      {
+        if (other
+          == org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1
+            .getDefaultInstance())
+          return this;
         if (!other.getId().isEmpty()) {
           id_ = other.id_;
           onChanged();
@@ -2139,9 +2611,10 @@ public final class DBSerialization {
               linksBuilder_ = null;
               links_ = other.links_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              linksBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getLinksFieldBuilder() : null;
+              linksBuilder_ =
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders
+                  ? getLinksFieldBuilder()
+                  : null;
             } else {
               linksBuilder_.addAllMessages(other.links_);
             }
@@ -2165,9 +2638,10 @@ public final class DBSerialization {
               imagesBuilder_ = null;
               images_ = other.images_;
               bitField0_ = (bitField0_ & ~0x00000002);
-              imagesBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getImagesFieldBuilder() : null;
+              imagesBuilder_ =
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders
+                  ? getImagesFieldBuilder()
+                  : null;
             } else {
               imagesBuilder_.addAllMessages(other.images_);
             }
@@ -2179,15 +2653,17 @@ public final class DBSerialization {
       }
 
       @java.lang.Override
-      public final boolean isInitialized() {
+      public final boolean isInitialized()
+      {
         return true;
       }
 
       @java.lang.Override
       public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException
+      {
         if (extensionRegistry == null) {
           throw new java.lang.NullPointerException();
         }
@@ -2221,9 +2697,10 @@ public final class DBSerialization {
               } // case 34
               case 42: {
                 org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 m =
-                    input.readMessage(
-                        org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.parser(),
-                        extensionRegistry);
+                  input.readMessage(
+                    org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1
+                      .parser(),
+                    extensionRegistry);
                 if (linksBuilder_ == null) {
                   ensureLinksIsMutable();
                   links_.add(m);
@@ -2234,9 +2711,10 @@ public final class DBSerialization {
               } // case 42
               case 50: {
                 org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 m =
-                    input.readMessage(
-                        org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.parser(),
-                        extensionRegistry);
+                  input.readMessage(
+                    org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1
+                      .parser(),
+                    extensionRegistry);
                 if (imagesBuilder_ == null) {
                   ensureImagesIsMutable();
                   images_.add(m);
@@ -2260,18 +2738,22 @@ public final class DBSerialization {
         } // finally
         return this;
       }
+
       private int bitField0_;
 
       private java.lang.Object id_ = "";
+
       /**
        * <code>string id = 1;</code>
+       * 
        * @return The id.
        */
-      public java.lang.String getId() {
+      public java.lang.String getId()
+      {
         java.lang.Object ref = id_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
           id_ = s;
           return s;
@@ -2279,75 +2761,89 @@ public final class DBSerialization {
           return (java.lang.String) ref;
         }
       }
+
       /**
        * <code>string id = 1;</code>
+       * 
        * @return The bytes for id.
        */
-      public com.google.protobuf.ByteString
-          getIdBytes() {
+      public com.google.protobuf.ByteString getIdBytes()
+      {
         java.lang.Object ref = id_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+          com.google.protobuf.ByteString b =
+            com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
           id_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
+
       /**
        * <code>string id = 1;</code>
+       * 
        * @param value The id to set.
        * @return This builder for chaining.
        */
       public Builder setId(
-          java.lang.String value) {
+        java.lang.String value)
+      {
         if (value == null) {
-    throw new NullPointerException();
-  }
-  
+          throw new NullPointerException();
+        }
+
         id_ = value;
         onChanged();
         return this;
       }
+
       /**
        * <code>string id = 1;</code>
+       * 
        * @return This builder for chaining.
        */
-      public Builder clearId() {
-        
+      public Builder clearId()
+      {
+
         id_ = getDefaultInstance().getId();
         onChanged();
         return this;
       }
+
       /**
        * <code>string id = 1;</code>
+       * 
        * @param value The bytes for id to set.
        * @return This builder for chaining.
        */
       public Builder setIdBytes(
-          com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value)
+      {
         if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
+          throw new NullPointerException();
+        }
+        checkByteStringIsUtf8(value);
+
         id_ = value;
         onChanged();
         return this;
       }
 
       private java.lang.Object title_ = "";
+
       /**
        * <code>string title = 2;</code>
+       * 
        * @return The title.
        */
-      public java.lang.String getTitle() {
+      public java.lang.String getTitle()
+      {
         java.lang.Object ref = title_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
           title_ = s;
           return s;
@@ -2355,75 +2851,89 @@ public final class DBSerialization {
           return (java.lang.String) ref;
         }
       }
+
       /**
        * <code>string title = 2;</code>
+       * 
        * @return The bytes for title.
        */
-      public com.google.protobuf.ByteString
-          getTitleBytes() {
+      public com.google.protobuf.ByteString getTitleBytes()
+      {
         java.lang.Object ref = title_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+          com.google.protobuf.ByteString b =
+            com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
           title_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
+
       /**
        * <code>string title = 2;</code>
+       * 
        * @param value The title to set.
        * @return This builder for chaining.
        */
       public Builder setTitle(
-          java.lang.String value) {
+        java.lang.String value)
+      {
         if (value == null) {
-    throw new NullPointerException();
-  }
-  
+          throw new NullPointerException();
+        }
+
         title_ = value;
         onChanged();
         return this;
       }
+
       /**
        * <code>string title = 2;</code>
+       * 
        * @return This builder for chaining.
        */
-      public Builder clearTitle() {
-        
+      public Builder clearTitle()
+      {
+
         title_ = getDefaultInstance().getTitle();
         onChanged();
         return this;
       }
+
       /**
        * <code>string title = 2;</code>
+       * 
        * @param value The bytes for title to set.
        * @return This builder for chaining.
        */
       public Builder setTitleBytes(
-          com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value)
+      {
         if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
+          throw new NullPointerException();
+        }
+        checkByteStringIsUtf8(value);
+
         title_ = value;
         onChanged();
         return this;
       }
 
       private java.lang.Object description_ = "";
+
       /**
        * <code>string description = 3;</code>
+       * 
        * @return The description.
        */
-      public java.lang.String getDescription() {
+      public java.lang.String getDescription()
+      {
         java.lang.Object ref = description_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
           description_ = s;
           return s;
@@ -2431,75 +2941,89 @@ public final class DBSerialization {
           return (java.lang.String) ref;
         }
       }
+
       /**
        * <code>string description = 3;</code>
+       * 
        * @return The bytes for description.
        */
-      public com.google.protobuf.ByteString
-          getDescriptionBytes() {
+      public com.google.protobuf.ByteString getDescriptionBytes()
+      {
         java.lang.Object ref = description_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+          com.google.protobuf.ByteString b =
+            com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
           description_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
+
       /**
        * <code>string description = 3;</code>
+       * 
        * @param value The description to set.
        * @return This builder for chaining.
        */
       public Builder setDescription(
-          java.lang.String value) {
+        java.lang.String value)
+      {
         if (value == null) {
-    throw new NullPointerException();
-  }
-  
+          throw new NullPointerException();
+        }
+
         description_ = value;
         onChanged();
         return this;
       }
+
       /**
        * <code>string description = 3;</code>
+       * 
        * @return This builder for chaining.
        */
-      public Builder clearDescription() {
-        
+      public Builder clearDescription()
+      {
+
         description_ = getDefaultInstance().getDescription();
         onChanged();
         return this;
       }
+
       /**
        * <code>string description = 3;</code>
+       * 
        * @param value The bytes for description to set.
        * @return This builder for chaining.
        */
       public Builder setDescriptionBytes(
-          com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value)
+      {
         if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
+          throw new NullPointerException();
+        }
+        checkByteStringIsUtf8(value);
+
         description_ = value;
         onChanged();
         return this;
       }
 
       private java.lang.Object updated_ = "";
+
       /**
        * <code>string updated = 4;</code>
+       * 
        * @return The updated.
        */
-      public java.lang.String getUpdated() {
+      public java.lang.String getUpdated()
+      {
         java.lang.Object ref = updated_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
           updated_ = s;
           return s;
@@ -2507,60 +3031,71 @@ public final class DBSerialization {
           return (java.lang.String) ref;
         }
       }
+
       /**
        * <code>string updated = 4;</code>
+       * 
        * @return The bytes for updated.
        */
-      public com.google.protobuf.ByteString
-          getUpdatedBytes() {
+      public com.google.protobuf.ByteString getUpdatedBytes()
+      {
         java.lang.Object ref = updated_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+          com.google.protobuf.ByteString b =
+            com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
           updated_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
+
       /**
        * <code>string updated = 4;</code>
+       * 
        * @param value The updated to set.
        * @return This builder for chaining.
        */
       public Builder setUpdated(
-          java.lang.String value) {
+        java.lang.String value)
+      {
         if (value == null) {
-    throw new NullPointerException();
-  }
-  
+          throw new NullPointerException();
+        }
+
         updated_ = value;
         onChanged();
         return this;
       }
+
       /**
        * <code>string updated = 4;</code>
+       * 
        * @return This builder for chaining.
        */
-      public Builder clearUpdated() {
-        
+      public Builder clearUpdated()
+      {
+
         updated_ = getDefaultInstance().getUpdated();
         onChanged();
         return this;
       }
+
       /**
        * <code>string updated = 4;</code>
+       * 
        * @param value The bytes for updated to set.
        * @return This builder for chaining.
        */
       public Builder setUpdatedBytes(
-          com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value)
+      {
         if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
+          throw new NullPointerException();
+        }
+        checkByteStringIsUtf8(value);
+
         updated_ = value;
         onChanged();
         return this;
@@ -2568,51 +3103,63 @@ public final class DBSerialization {
 
       private java.util.List<org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1> links_ =
         java.util.Collections.emptyList();
-      private void ensureLinksIsMutable() {
+
+      private void ensureLinksIsMutable()
+      {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          links_ = new java.util.ArrayList<org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1>(links_);
+          links_ =
+            new java.util.ArrayList<org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1>(
+              links_);
           bitField0_ |= 0x00000001;
-         }
+        }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1, org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.Builder, org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1OrBuilder> linksBuilder_;
+      private com.google.protobuf.RepeatedFieldBuilderV3<org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1, org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.Builder, org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1OrBuilder> linksBuilder_;
 
       /**
        * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 links = 5;</code>
        */
-      public java.util.List<org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1> getLinksList() {
+      public java.util.List<org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1> getLinksList()
+      {
         if (linksBuilder_ == null) {
           return java.util.Collections.unmodifiableList(links_);
         } else {
           return linksBuilder_.getMessageList();
         }
       }
+
       /**
        * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 links = 5;</code>
        */
-      public int getLinksCount() {
+      public int getLinksCount()
+      {
         if (linksBuilder_ == null) {
           return links_.size();
         } else {
           return linksBuilder_.getCount();
         }
       }
+
       /**
        * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 links = 5;</code>
        */
-      public org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 getLinks(int index) {
+      public org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 getLinks(
+        int index)
+      {
         if (linksBuilder_ == null) {
           return links_.get(index);
         } else {
           return linksBuilder_.getMessage(index);
         }
       }
+
       /**
        * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 links = 5;</code>
        */
       public Builder setLinks(
-          int index, org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 value) {
+        int index,
+        org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 value)
+      {
         if (linksBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2625,11 +3172,14 @@ public final class DBSerialization {
         }
         return this;
       }
+
       /**
        * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 links = 5;</code>
        */
       public Builder setLinks(
-          int index, org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.Builder builderForValue) {
+        int index,
+        org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.Builder builderForValue)
+      {
         if (linksBuilder_ == null) {
           ensureLinksIsMutable();
           links_.set(index, builderForValue.build());
@@ -2639,10 +3189,13 @@ public final class DBSerialization {
         }
         return this;
       }
+
       /**
        * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 links = 5;</code>
        */
-      public Builder addLinks(org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 value) {
+      public Builder addLinks(
+        org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 value)
+      {
         if (linksBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2655,11 +3208,14 @@ public final class DBSerialization {
         }
         return this;
       }
+
       /**
        * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 links = 5;</code>
        */
       public Builder addLinks(
-          int index, org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 value) {
+        int index,
+        org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 value)
+      {
         if (linksBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2672,11 +3228,13 @@ public final class DBSerialization {
         }
         return this;
       }
+
       /**
        * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 links = 5;</code>
        */
       public Builder addLinks(
-          org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.Builder builderForValue) {
+        org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.Builder builderForValue)
+      {
         if (linksBuilder_ == null) {
           ensureLinksIsMutable();
           links_.add(builderForValue.build());
@@ -2686,11 +3244,14 @@ public final class DBSerialization {
         }
         return this;
       }
+
       /**
        * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 links = 5;</code>
        */
       public Builder addLinks(
-          int index, org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.Builder builderForValue) {
+        int index,
+        org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.Builder builderForValue)
+      {
         if (linksBuilder_ == null) {
           ensureLinksIsMutable();
           links_.add(index, builderForValue.build());
@@ -2700,25 +3261,30 @@ public final class DBSerialization {
         }
         return this;
       }
+
       /**
        * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 links = 5;</code>
        */
       public Builder addAllLinks(
-          java.lang.Iterable<? extends org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1> values) {
+        java.lang.Iterable<? extends org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1> values)
+      {
         if (linksBuilder_ == null) {
           ensureLinksIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, links_);
+            values,
+            links_);
           onChanged();
         } else {
           linksBuilder_.addAllMessages(values);
         }
         return this;
       }
+
       /**
        * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 links = 5;</code>
        */
-      public Builder clearLinks() {
+      public Builder clearLinks()
+      {
         if (linksBuilder_ == null) {
           links_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
@@ -2728,10 +3294,13 @@ public final class DBSerialization {
         }
         return this;
       }
+
       /**
        * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 links = 5;</code>
        */
-      public Builder removeLinks(int index) {
+      public Builder removeLinks(
+        int index)
+      {
         if (linksBuilder_ == null) {
           ensureLinksIsMutable();
           links_.remove(index);
@@ -2741,66 +3310,80 @@ public final class DBSerialization {
         }
         return this;
       }
+
       /**
        * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 links = 5;</code>
        */
       public org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.Builder getLinksBuilder(
-          int index) {
+        int index)
+      {
         return getLinksFieldBuilder().getBuilder(index);
       }
+
       /**
        * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 links = 5;</code>
        */
       public org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1OrBuilder getLinksOrBuilder(
-          int index) {
+        int index)
+      {
         if (linksBuilder_ == null) {
-          return links_.get(index);  } else {
+          return links_.get(index);
+        } else {
           return linksBuilder_.getMessageOrBuilder(index);
         }
       }
+
       /**
        * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 links = 5;</code>
        */
-      public java.util.List<? extends org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1OrBuilder> 
-           getLinksOrBuilderList() {
+      public java.util.List<? extends org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1OrBuilder> getLinksOrBuilderList()
+      {
         if (linksBuilder_ != null) {
           return linksBuilder_.getMessageOrBuilderList();
         } else {
           return java.util.Collections.unmodifiableList(links_);
         }
       }
+
       /**
        * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 links = 5;</code>
        */
-      public org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.Builder addLinksBuilder() {
+      public org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.Builder addLinksBuilder()
+      {
         return getLinksFieldBuilder().addBuilder(
-            org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.getDefaultInstance());
+          org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1
+            .getDefaultInstance());
       }
+
       /**
        * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 links = 5;</code>
        */
       public org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.Builder addLinksBuilder(
-          int index) {
+        int index)
+      {
         return getLinksFieldBuilder().addBuilder(
-            index, org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.getDefaultInstance());
+          index,
+          org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1
+            .getDefaultInstance());
       }
+
       /**
        * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 links = 5;</code>
        */
-      public java.util.List<org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.Builder> 
-           getLinksBuilderList() {
+      public java.util.List<org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.Builder> getLinksBuilderList()
+      {
         return getLinksFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1, org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.Builder, org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1OrBuilder> 
-          getLinksFieldBuilder() {
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1, org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.Builder, org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1OrBuilder> getLinksFieldBuilder()
+      {
         if (linksBuilder_ == null) {
-          linksBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1, org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.Builder, org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1OrBuilder>(
-                  links_,
-                  ((bitField0_ & 0x00000001) != 0),
-                  getParentForChildren(),
-                  isClean());
+          linksBuilder_ =
+            new com.google.protobuf.RepeatedFieldBuilderV3<org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1, org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.Builder, org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1OrBuilder>(
+              links_,
+              ((bitField0_ & 0x00000001) != 0),
+              getParentForChildren(),
+              isClean());
           links_ = null;
         }
         return linksBuilder_;
@@ -2808,51 +3391,63 @@ public final class DBSerialization {
 
       private java.util.List<org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1> images_ =
         java.util.Collections.emptyList();
-      private void ensureImagesIsMutable() {
+
+      private void ensureImagesIsMutable()
+      {
         if (!((bitField0_ & 0x00000002) != 0)) {
-          images_ = new java.util.ArrayList<org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1>(images_);
+          images_ =
+            new java.util.ArrayList<org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1>(
+              images_);
           bitField0_ |= 0x00000002;
-         }
+        }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1, org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.Builder, org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1OrBuilder> imagesBuilder_;
+      private com.google.protobuf.RepeatedFieldBuilderV3<org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1, org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.Builder, org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1OrBuilder> imagesBuilder_;
 
       /**
        * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 images = 6;</code>
        */
-      public java.util.List<org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1> getImagesList() {
+      public java.util.List<org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1> getImagesList()
+      {
         if (imagesBuilder_ == null) {
           return java.util.Collections.unmodifiableList(images_);
         } else {
           return imagesBuilder_.getMessageList();
         }
       }
+
       /**
        * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 images = 6;</code>
        */
-      public int getImagesCount() {
+      public int getImagesCount()
+      {
         if (imagesBuilder_ == null) {
           return images_.size();
         } else {
           return imagesBuilder_.getCount();
         }
       }
+
       /**
        * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 images = 6;</code>
        */
-      public org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 getImages(int index) {
+      public org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 getImages(
+        int index)
+      {
         if (imagesBuilder_ == null) {
           return images_.get(index);
         } else {
           return imagesBuilder_.getMessage(index);
         }
       }
+
       /**
        * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 images = 6;</code>
        */
       public Builder setImages(
-          int index, org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 value) {
+        int index,
+        org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 value)
+      {
         if (imagesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2865,11 +3460,14 @@ public final class DBSerialization {
         }
         return this;
       }
+
       /**
        * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 images = 6;</code>
        */
       public Builder setImages(
-          int index, org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.Builder builderForValue) {
+        int index,
+        org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.Builder builderForValue)
+      {
         if (imagesBuilder_ == null) {
           ensureImagesIsMutable();
           images_.set(index, builderForValue.build());
@@ -2879,10 +3477,13 @@ public final class DBSerialization {
         }
         return this;
       }
+
       /**
        * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 images = 6;</code>
        */
-      public Builder addImages(org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 value) {
+      public Builder addImages(
+        org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 value)
+      {
         if (imagesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2895,11 +3496,14 @@ public final class DBSerialization {
         }
         return this;
       }
+
       /**
        * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 images = 6;</code>
        */
       public Builder addImages(
-          int index, org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 value) {
+        int index,
+        org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1 value)
+      {
         if (imagesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2912,11 +3516,13 @@ public final class DBSerialization {
         }
         return this;
       }
+
       /**
        * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 images = 6;</code>
        */
       public Builder addImages(
-          org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.Builder builderForValue) {
+        org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.Builder builderForValue)
+      {
         if (imagesBuilder_ == null) {
           ensureImagesIsMutable();
           images_.add(builderForValue.build());
@@ -2926,11 +3532,14 @@ public final class DBSerialization {
         }
         return this;
       }
+
       /**
        * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 images = 6;</code>
        */
       public Builder addImages(
-          int index, org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.Builder builderForValue) {
+        int index,
+        org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.Builder builderForValue)
+      {
         if (imagesBuilder_ == null) {
           ensureImagesIsMutable();
           images_.add(index, builderForValue.build());
@@ -2940,25 +3549,30 @@ public final class DBSerialization {
         }
         return this;
       }
+
       /**
        * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 images = 6;</code>
        */
       public Builder addAllImages(
-          java.lang.Iterable<? extends org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1> values) {
+        java.lang.Iterable<? extends org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1> values)
+      {
         if (imagesBuilder_ == null) {
           ensureImagesIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, images_);
+            values,
+            images_);
           onChanged();
         } else {
           imagesBuilder_.addAllMessages(values);
         }
         return this;
       }
+
       /**
        * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 images = 6;</code>
        */
-      public Builder clearImages() {
+      public Builder clearImages()
+      {
         if (imagesBuilder_ == null) {
           images_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000002);
@@ -2968,10 +3582,13 @@ public final class DBSerialization {
         }
         return this;
       }
+
       /**
        * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 images = 6;</code>
        */
-      public Builder removeImages(int index) {
+      public Builder removeImages(
+        int index)
+      {
         if (imagesBuilder_ == null) {
           ensureImagesIsMutable();
           images_.remove(index);
@@ -2981,82 +3598,98 @@ public final class DBSerialization {
         }
         return this;
       }
+
       /**
        * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 images = 6;</code>
        */
       public org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.Builder getImagesBuilder(
-          int index) {
+        int index)
+      {
         return getImagesFieldBuilder().getBuilder(index);
       }
+
       /**
        * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 images = 6;</code>
        */
       public org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1OrBuilder getImagesOrBuilder(
-          int index) {
+        int index)
+      {
         if (imagesBuilder_ == null) {
-          return images_.get(index);  } else {
+          return images_.get(index);
+        } else {
           return imagesBuilder_.getMessageOrBuilder(index);
         }
       }
+
       /**
        * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 images = 6;</code>
        */
-      public java.util.List<? extends org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1OrBuilder> 
-           getImagesOrBuilderList() {
+      public java.util.List<? extends org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1OrBuilder> getImagesOrBuilderList()
+      {
         if (imagesBuilder_ != null) {
           return imagesBuilder_.getMessageOrBuilderList();
         } else {
           return java.util.Collections.unmodifiableList(images_);
         }
       }
+
       /**
        * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 images = 6;</code>
        */
-      public org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.Builder addImagesBuilder() {
+      public org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.Builder addImagesBuilder()
+      {
         return getImagesFieldBuilder().addBuilder(
-            org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.getDefaultInstance());
+          org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1
+            .getDefaultInstance());
       }
+
       /**
        * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 images = 6;</code>
        */
       public org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.Builder addImagesBuilder(
-          int index) {
+        int index)
+      {
         return getImagesFieldBuilder().addBuilder(
-            index, org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.getDefaultInstance());
+          index,
+          org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1
+            .getDefaultInstance());
       }
+
       /**
        * <code>repeated .org.thepalaceproject.webpub.cmdline.internal.DBSLink1 images = 6;</code>
        */
-      public java.util.List<org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.Builder> 
-           getImagesBuilderList() {
+      public java.util.List<org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.Builder> getImagesBuilderList()
+      {
         return getImagesFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1, org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.Builder, org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1OrBuilder> 
-          getImagesFieldBuilder() {
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1, org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.Builder, org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1OrBuilder> getImagesFieldBuilder()
+      {
         if (imagesBuilder_ == null) {
-          imagesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1, org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.Builder, org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1OrBuilder>(
-                  images_,
-                  ((bitField0_ & 0x00000002) != 0),
-                  getParentForChildren(),
-                  isClean());
+          imagesBuilder_ =
+            new com.google.protobuf.RepeatedFieldBuilderV3<org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1, org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1.Builder, org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSLink1OrBuilder>(
+              images_,
+              ((bitField0_ & 0x00000002) != 0),
+              getParentForChildren(),
+              isClean());
           images_ = null;
         }
         return imagesBuilder_;
       }
+
       @java.lang.Override
       public final Builder setUnknownFields(
-          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        final com.google.protobuf.UnknownFieldSet unknownFields)
+      {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
       public final Builder mergeUnknownFields(
-          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        final com.google.protobuf.UnknownFieldSet unknownFields)
+      {
         return super.mergeUnknownFields(unknownFields);
       }
-
 
       // @@protoc_insertion_point(builder_scope:org.thepalaceproject.webpub.cmdline.internal.DBSAccountProviderDescription1)
     }
@@ -3064,99 +3697,131 @@ public final class DBSerialization {
     // @@protoc_insertion_point(class_scope:org.thepalaceproject.webpub.cmdline.internal.DBSAccountProviderDescription1)
     private static final org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1 DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1();
+      DEFAULT_INSTANCE =
+        new org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1();
     }
 
-    public static org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1 getDefaultInstance() {
+    public static org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1 getDefaultInstance()
+    {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<DBSAccountProviderDescription1>
-        PARSER = new com.google.protobuf.AbstractParser<DBSAccountProviderDescription1>() {
-      @java.lang.Override
-      public DBSAccountProviderDescription1 parsePartialFrom(
+    private static final com.google.protobuf.Parser<DBSAccountProviderDescription1> PARSER =
+      new com.google.protobuf.AbstractParser<DBSAccountProviderDescription1>()
+      {
+        @java.lang.Override
+        public DBSAccountProviderDescription1 parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        Builder builder = newBuilder();
-        try {
-          builder.mergeFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          throw e.setUnfinishedMessage(builder.buildPartial());
-        } catch (com.google.protobuf.UninitializedMessageException e) {
-          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
-        } catch (java.io.IOException e) {
-          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+          throws com.google.protobuf.InvalidProtocolBufferException
+        {
+          Builder builder = newBuilder();
+          try {
+            builder.mergeFrom(input, extensionRegistry);
+          } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+            throw e.setUnfinishedMessage(builder.buildPartial());
+          } catch (com.google.protobuf.UninitializedMessageException e) {
+            throw e.asInvalidProtocolBufferException()
               .setUnfinishedMessage(builder.buildPartial());
+          } catch (java.io.IOException e) {
+            throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+          }
+          return builder.buildPartial();
         }
-        return builder.buildPartial();
-      }
-    };
+      };
 
-    public static com.google.protobuf.Parser<DBSAccountProviderDescription1> parser() {
+    public static com.google.protobuf.Parser<DBSAccountProviderDescription1> parser()
+    {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<DBSAccountProviderDescription1> getParserForType() {
+    public com.google.protobuf.Parser<DBSAccountProviderDescription1> getParserForType()
+    {
       return PARSER;
     }
 
     @java.lang.Override
-    public org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1 getDefaultInstanceForType() {
+    public org.thepalaceproject.webpub.cmdline.internal.DBSerialization.DBSAccountProviderDescription1 getDefaultInstanceForType()
+    {
       return DEFAULT_INSTANCE;
     }
 
   }
 
-  private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_org_thepalaceproject_webpub_cmdline_internal_DBSLink1_descriptor;
-  private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_org_thepalaceproject_webpub_cmdline_internal_DBSLink1_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_org_thepalaceproject_webpub_cmdline_internal_DBSAccountProviderDescription1_descriptor;
-  private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_org_thepalaceproject_webpub_cmdline_internal_DBSAccountProviderDescription1_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor internal_static_org_thepalaceproject_webpub_cmdline_internal_DBSLink1_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable internal_static_org_thepalaceproject_webpub_cmdline_internal_DBSLink1_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor internal_static_org_thepalaceproject_webpub_cmdline_internal_DBSAccountProviderDescription1_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable internal_static_org_thepalaceproject_webpub_cmdline_internal_DBSAccountProviderDescription1_fieldAccessorTable;
 
-  public static com.google.protobuf.Descriptors.FileDescriptor
-      getDescriptor() {
+  public static com.google.protobuf.Descriptors.FileDescriptor getDescriptor()
+  {
     return descriptor;
   }
-  private static  com.google.protobuf.Descriptors.FileDescriptor
-      descriptor;
+
+  private static com.google.protobuf.Descriptors.FileDescriptor descriptor;
   static {
-    java.lang.String[] descriptorData = {
-      "\n\025DBSerialization.proto\022,org.thepalacepr" +
-      "oject.webpub.cmdline.internal\"\234\001\n\010DBSLin" +
-      "k1\022\014\n\004type\030\001 \001(\t\022\020\n\010relation\030\002 \001(\t\022\r\n\005ti" +
-      "tle\030\003 \001(\t\022\016\n\006height\030\004 \001(\r\022\r\n\005width\030\005 \001(\r" +
-      "\022\020\n\010duration\030\006 \001(\001\022\017\n\007bitrate\030\007 \001(\001\022\014\n\004h" +
-      "ref\030\010 \001(\t\022\021\n\ttemplated\030\t \001(\010\"\360\001\n\036DBSAcco" +
-      "untProviderDescription1\022\n\n\002id\030\001 \001(\t\022\r\n\005t" +
-      "itle\030\002 \001(\t\022\023\n\013description\030\003 \001(\t\022\017\n\007updat" +
-      "ed\030\004 \001(\t\022E\n\005links\030\005 \003(\01326.org.thepalacep" +
-      "roject.webpub.cmdline.internal.DBSLink1\022" +
-      "F\n\006images\030\006 \003(\01326.org.thepalaceproject.w" +
-      "ebpub.cmdline.internal.DBSLink1b\006proto3"
-    };
-    descriptor = com.google.protobuf.Descriptors.FileDescriptor
-      .internalBuildGeneratedFileFrom(descriptorData,
-        new com.google.protobuf.Descriptors.FileDescriptor[] {
-        });
+    java.lang.String[] descriptorData =
+      {
+        "\n\025DBSerialization.proto\022,org.thepalacepr"
+          +
+          "oject.webpub.cmdline.internal\"\234\001\n\010DBSLin"
+          +
+          "k1\022\014\n\004type\030\001 \001(\t\022\020\n\010relation\030\002 \001(\t\022\r\n\005ti"
+          +
+          "tle\030\003 \001(\t\022\016\n\006height\030\004 \001(\r\022\r\n\005width\030\005 \001(\r"
+          +
+          "\022\020\n\010duration\030\006 \001(\001\022\017\n\007bitrate\030\007 \001(\001\022\014\n\004h"
+          +
+          "ref\030\010 \001(\t\022\021\n\ttemplated\030\t \001(\010\"\360\001\n\036DBSAcco"
+          +
+          "untProviderDescription1\022\n\n\002id\030\001 \001(\t\022\r\n\005t"
+          +
+          "itle\030\002 \001(\t\022\023\n\013description\030\003 \001(\t\022\017\n\007updat"
+          +
+          "ed\030\004 \001(\t\022E\n\005links\030\005 \003(\01326.org.thepalacep"
+          +
+          "roject.webpub.cmdline.internal.DBSLink1\022"
+          +
+          "F\n\006images\030\006 \003(\01326.org.thepalaceproject.w"
+          +
+          "ebpub.cmdline.internal.DBSLink1b\006proto3"
+      };
+    descriptor =
+      com.google.protobuf.Descriptors.FileDescriptor
+        .internalBuildGeneratedFileFrom(
+          descriptorData,
+          new com.google.protobuf.Descriptors.FileDescriptor[] {});
     internal_static_org_thepalaceproject_webpub_cmdline_internal_DBSLink1_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_org_thepalaceproject_webpub_cmdline_internal_DBSLink1_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+    internal_static_org_thepalaceproject_webpub_cmdline_internal_DBSLink1_fieldAccessorTable =
+      new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_org_thepalaceproject_webpub_cmdline_internal_DBSLink1_descriptor,
-        new java.lang.String[] { "Type", "Relation", "Title", "Height", "Width", "Duration", "Bitrate", "Href", "Templated", });
+        new java.lang.String[] {
+          "Type",
+          "Relation",
+          "Title",
+          "Height",
+          "Width",
+          "Duration",
+          "Bitrate",
+          "Href",
+          "Templated",
+        });
     internal_static_org_thepalaceproject_webpub_cmdline_internal_DBSAccountProviderDescription1_descriptor =
       getDescriptor().getMessageTypes().get(1);
-    internal_static_org_thepalaceproject_webpub_cmdline_internal_DBSAccountProviderDescription1_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+    internal_static_org_thepalaceproject_webpub_cmdline_internal_DBSAccountProviderDescription1_fieldAccessorTable =
+      new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_org_thepalaceproject_webpub_cmdline_internal_DBSAccountProviderDescription1_descriptor,
-        new java.lang.String[] { "Id", "Title", "Description", "Updated", "Links", "Images", });
+        new java.lang.String[] {
+          "Id",
+          "Title",
+          "Description",
+          "Updated",
+          "Links",
+          "Images",
+        });
   }
 
   // @@protoc_insertion_point(outer_class_scope)
