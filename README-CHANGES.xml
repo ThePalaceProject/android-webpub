@@ -33,7 +33,9 @@
       </c:changes>
     </c:release>
     <c:release date="2026-11-05T15:32:35+00:00" is-open="true" ticket-system="org.lyrasis.jira" version="1.4.0">
-      <c:changes/>
+      <c:changes>
+        <c:change date="2026-11-11T00:00:00+00:00" summary="Add publications and links fields to WPMGroup."/>
+      </c:changes>
     </c:release>
   </c:releases>
   <c:ticket-systems>
