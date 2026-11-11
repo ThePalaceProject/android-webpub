@@ -29,4 +29,22 @@ data class WPMGroup @JsonCreator constructor(
     value = "navigation"
   )
   val navigation : List<WPMLink> = listOf(),
+
+  /**
+   * The links.
+   */
+
+  @JsonProperty(
+    value = "links"
+  )
+  val links : List<WPMLink> = listOf(),
+
+  /**
+   * The publications in this group.
+   */
+
+  @JsonProperty(
+    value = "publications"
+  )
+  val publications : List<WPMPublication> = listOf(),
 ) : WPMElement()

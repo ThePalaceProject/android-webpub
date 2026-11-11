@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "title": "Grouped Feed Test",
+    "modified": "2026-11-11T00:00:00Z"
+  },
+  "links": [
+    {
+      "href": "https://example.com/feed",
+      "rel": "self",
+      "type": "application/opds+json"
+    }
+  ],
+  "publications": [],
+  "groups": [
+    {
+      "metadata": {
+        "title": "Group One"
+      },
+      "links": [
+        {
+          "href": "https://example.com/group1",
+          "rel": "self",
+          "type": "application/opds+json"
+        }
+      ],
+      "publications": [
+        {
+          "metadata": {
+            "title": "Book A",
+            "identifier": "urn:test:a"
+          },
+          "links": []
+        },
+        {
+          "metadata": {
+            "title": "Book B",
+            "identifier": "urn:test:b"
+          },
+          "links": []
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "title": "Group Two"
+      },
+      "links": [
+        {
+          "href": "https://example.com/group2",
+          "rel": "self",
+          "type": "application/opds+json"
+        }
+      ],
+      "publications": [
+        {
+          "metadata": {
+            "title": "Book C",
+            "identifier": "urn:test:c"
+          },
+          "links": []
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "title": "Empty Group"
+      },
+      "links": [
+        {
+          "href": "https://example.com/group3",
+          "rel": "self",
+          "type": "application/opds+json"
+        }
+      ]
+    }
+  ]
+}

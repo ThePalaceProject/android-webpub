@@ -17,6 +17,7 @@ import org.thepalaceproject.webpub.core.WPMCollection
 import org.thepalaceproject.webpub.core.WPMEpisode
 import org.thepalaceproject.webpub.core.WPMFeed
 import org.thepalaceproject.webpub.core.WPMIndirectAcquisitionTree
+import org.thepalaceproject.webpub.core.WPMLinkBasic
 import org.thepalaceproject.webpub.core.WPMIssue
 import org.thepalaceproject.webpub.core.WPMManifest
 import org.thepalaceproject.webpub.core.WPMMappers
@@ -47,6 +48,39 @@ class WPMParseTest {
       directory
     this.mapper =
       WPMMappers.createMapper()
+  }
+
+  @Test
+  fun testGroupsWithPublications() {
+    val feed =
+      this.mapper.readValue<WPMFeed>(
+        this.resource("groups-with-publications.json"),
+        WPMFeed::class.java
+      )
+
+    assertEquals(0, feed.publications.size)
+    assertEquals(3, feed.groups.size)
+
+    val group0 = feed.groups[0]
+    assertEquals("Group One", group0.metadata.title.defaultValue)
+    assertEquals(2, group0.publications.size)
+    assertEquals("Book A", group0.publications[0].metadata.title.defaultValue)
+    assertEquals("Book B", group0.publications[1].metadata.title.defaultValue)
+    assertEquals(1, group0.links.size)
+    val group0Link = group0.links[0] as WPMLinkBasic
+    assertEquals("https://example.com/group1", group0Link.href.toString())
+
+    val group1 = feed.groups[1]
+    assertEquals("Group Two", group1.metadata.title.defaultValue)
+    assertEquals(1, group1.publications.size)
+    assertEquals("Book C", group1.publications[0].metadata.title.defaultValue)
+    assertEquals(1, group1.links.size)
+
+    val group2 = feed.groups[2]
+    assertEquals("Empty Group", group2.metadata.title.defaultValue)
+    assertEquals(0, group2.publications.size)
+
+    this.roundTripFeed(feed)
   }
 
   @Test
