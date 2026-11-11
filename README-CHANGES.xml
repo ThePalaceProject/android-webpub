@@ -32,10 +32,13 @@
         <c:change date="2026-11-05T00:00:00+00:00" summary="Retain unknown and extended OPDS 2.0 link properties."/>
       </c:changes>
     </c:release>
-    <c:release date="2026-11-05T15:32:35+00:00" is-open="true" ticket-system="org.lyrasis.jira" version="1.4.0">
+    <c:release date="2026-11-11T00:00:00+00:00" is-open="false" ticket-system="org.lyrasis.jira" version="1.4.0">
       <c:changes>
         <c:change date="2026-11-11T00:00:00+00:00" summary="Add publications and links fields to WPMGroup."/>
       </c:changes>
+    </c:release>
+    <c:release date="2026-11-11T17:40:01+00:00" is-open="true" ticket-system="org.lyrasis.jira" version="1.5.0">
+      <c:changes/>
     </c:release>
   </c:releases>
   <c:ticket-systems>
